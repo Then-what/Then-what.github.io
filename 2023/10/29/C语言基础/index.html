@@ -119,11 +119,6 @@
 <td align="center">输出数据</td>
 <td align="center">char a &#x3D; ‘A’, int b &#x3D; 100; printf(“a&#x3D;%c,b&#x3D;%d”, a, b)</td>
 </tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
 </tbody></table>
 <p>注：sancf()函数中的例子，&amp; 是地址运输符，&amp;a 是指变量 a 在内存中的地址，输入的数据会一次进入这些变量的存储单元中</p>
 <h3 id="格式字符串"><a href="#格式字符串" class="headerlink" title="格式字符串"></a>格式字符串</h3><table>
@@ -134,7 +129,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">%d</td>
+<td align="center">%d,i</td>
 <td align="center">输入输出时用十进制整数表示(显示)</td>
 </tr>
 <tr>
@@ -143,15 +138,23 @@
 </tr>
 <tr>
 <td align="center">%s</td>
-<td align="center">用来输出一个字符串</td>
+<td align="center">用来输入输出一个字符串</td>
 </tr>
 <tr>
 <td align="center">%f</td>
-<td align="center">用来输出一个实数</td>
+<td align="center">用来输入输出一个实数</td>
 </tr>
 <tr>
 <td align="center">%u</td>
-<td align="center">用来输出无符号变量</td>
+<td align="center">用来输入输出无符号十进制整数</td>
+</tr>
+<tr>
+<td align="center">%o</td>
+<td align="center">以八进制的形式输入输出</td>
+</tr>
+<tr>
+<td align="center">%x</td>
+<td align="center">以十六进制的形式输入输出</td>
 </tr>
 <tr>
 <td align="center">%e</td>
@@ -162,63 +165,29 @@
 <td align="center">根据变量的长度自动选择 %f 或 %e 的格式输出</td>
 </tr>
 </tbody></table>
-<p>注：使用 %f 输出 double 类型的时候，需要在 f 前面添加一个字母 l 修饰符，如：double a &#x3D; 12.122; printf(“%lf”, a);</p>
+<p>注：使用 %f 输出 double 类型的时候，需要在 f 前面添加一个大写字母 L 或小写 l 修饰符，如：double a &#x3D; 12.122; printf(“%lf”, a);</p>
 <h3 id="格式字符串的输入输出修饰符"><a href="#格式字符串的输入输出修饰符" class="headerlink" title="格式字符串的输入输出修饰符"></a>格式字符串的输入输出修饰符</h3><table>
 <thead>
 <tr>
 <th align="center">修饰符</th>
 <th align="center">作用</th>
-<th align="center">例子</th>
-<th align="center">注意</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">%m.nf</td>
-<td align="center">指定实数的输出宽度</td>
-<td align="center">double a &#x3D; 123.123456; printf(“%7.2f”, a); &#x2F;&#x2F; 输出为 123.12</td>
-<td align="center">m 要大于 n</td>
+<td align="center">域宽</td>
+<td align="center">用于指定输入输出数据所占的宽度</td>
 </tr>
 <tr>
-<td align="center">%lf</td>
-<td align="center">用于输出 double 类型的数据</td>
-<td align="center">double a &#x3D; 12.122; printf(“%lf”, a);</td>
-<td align="center"></td>
+<td align="center">l</td>
+<td align="center">用于输入输出长整型的数据</td>
 </tr>
 <tr>
-<td align="center">%md</td>
-<td align="center">指定输出数据的宽度</td>
-<td align="center">int a &#x3D; 123; printf(“%2d”, a); &#x2F;&#x2F; 输出为 123</td>
-<td align="center"></td>
+<td align="center">h</td>
+<td align="center">用于输入输出短整型的数据</td>
 </tr>
 <tr>
-<td align="center">%ld</td>
-<td align="center">输出长数据</td>
-<td align="center">int a&#x3D; 1234567890; printf(“%ld”, a);</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">%o</td>
-<td align="center">以八进制的形式输出</td>
-<td align="center">int a &#x3D; 12345; printf(“%o”, a);</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">%x</td>
-<td align="center">以十六进制的形式输出</td>
-<td align="center">int a &#x3D; 12345; printf(“%x”, a);</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">*</td>
+<td align="center">表示输入项在读入后不赋值给相应的变量</td>
 </tr>
 </tbody></table>
 <h3 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h3><p>注：使用数学函数的时候要在 #include &lt;stdio.h&gt; 的下面添加 #include &lt;math.h&gt;</p>
@@ -233,15 +202,77 @@
 <td align="center">sqrt()</td>
 <td align="center">求平方根</td>
 </tr>
+</tbody></table>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p><strong>数组格式：</strong>数组类型 数组名 [数组长度] &#x3D; {数组初始值}</p>
+<p><strong>例子：</strong>int arr[10] &#x3D; {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}</p>
+<h4 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h4><p>注：使用字符串函数时，需要在文件头部添加 #include &lt;string.h&gt;</p>
+<table>
+<thead>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
+<th align="center">函数名</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">gets(字符数组)</td>
+<td align="center">从终端输入一个字符串到数组里</td>
 </tr>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">puts(字符数组)</td>
+<td align="center">将一个字符串输出到终端</td>
+</tr>
+<tr>
+<td align="center">strcat(字符数组1, 字符数组2)</td>
+<td align="center">合并两个字符数组，将字符数组2连接到字符数组1后面</td>
+</tr>
+<tr>
+<td align="center">strcpy(字符数组1, 字符串2)</td>
+<td align="center">将字符串2直接覆盖字符数组1的数据</td>
+</tr>
+<tr>
+<td align="center">strcmp(字符串1, 字符串2)</td>
+<td align="center">比较两个字符串，两个字符串相等返回 ”0“，1 大于 2 返回 ”1“，1 小于 2 返回 ”-1“</td>
+</tr>
+<tr>
+<td align="center">strlen(字符数组)</td>
+<td align="center">返回字符数组的长度</td>
+</tr>
+<tr>
+<td align="center">strlwr(字符串)</td>
+<td align="center">将字符串大写字母转换成小写字母</td>
+</tr>
+<tr>
+<td align="center">strupr(字符串)</td>
+<td align="center">将字符串小写字母转换成大写字母</td>
 </tr>
 </tbody></table>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="存储类别"><a href="#存储类别" class="headerlink" title="存储类别"></a>存储类别</h4><p><strong>定义：</strong>C语言中有两种存储类别，分别为<strong>静态存储方式</strong>和<strong>动态存储方式</strong>，静态存储方式会在程序运行期间系统在静态存储区划分存储空间，而在程序运行期间静态存储的数据不会被释放，动态存储方式则是在函数的调用期间在动态存储区划分存储空间，当函数运行结束动态存储方式的数据会被释放</p>
+<p><strong>指定变量存储类别</strong> </p>
+<ol>
+<li><p>自动变量**(**动态变量)</p>
+<p><strong>修饰符：</strong>auto</p>
+<p><strong>作用：</strong>将变量使用动态存储方式存储</p>
+<p><strong>例子：</strong>auto int a, b &#x3D; 3;</p>
+</li>
+<li><p>静态变量</p>
+<p><strong>修饰符：</strong>static</p>
+<p><strong>作用：</strong>将变量使用静态存储方式存储</p>
+<p><strong>例子：</strong> static int a, b;</p>
+<p><strong>注：</strong>在函数中使用这个修饰符，会将数据转换成<strong>静态局部变量</strong>，也就是说当函数运行结束之后，并不会将改变量释放，会保留上一次运行的值</p>
+</li>
+</ol>
+<h4 id="内部函数和外部函数"><a href="#内部函数和外部函数" class="headerlink" title="内部函数和外部函数"></a>内部函数和外部函数</h4><ol>
+<li><p>内部函数</p>
+<p><strong>修饰符：</strong>static</p>
+<p><strong>作用：</strong>用于将函数声明为内部函数，使其不能被其它文件使用</p>
+<p><strong>例子：</strong>static int max(int x, int y){};</p>
+</li>
+<li><p>外部函数</p>
+<p><strong>修饰符：</strong>extern</p>
+<p><strong>作用：</strong>用于将函数声明为外部函数，使其能被其它文件使用，如果不加修饰符，默认是外部函数(extern)</p>
+<p><strong>例子：</strong>extern int max(int x, int y){};</p>
+</li>
+</ol>
 
                 
                 <p class="end">__END__</p>
