@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="referrer" content="origin">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>
+        
+            函数与极限连续
+        
+    </title>
+    <link rel="shortcut icon" href="#"/>
+
+    <link type="text/css" rel="stylesheet" href="/font/LongCang.css">
+    <link type="text/css" rel="stylesheet" href="/font/Monda.css">
+    <link type="text/css" rel="stylesheet" href="/font/NotoSansSC.css">
+    <link type="text/css" rel="stylesheet" href="/font/NotoSerifSC.css">
+    <link type="text/css" rel="stylesheet" href="/font/Playball.css">
+    <link type="text/css" rel="stylesheet" href="/font/PTMono.css">
+    <link type="text/css" rel="stylesheet" href="/font/Roboto.css">
+    <link type="text/css" rel="stylesheet" href="/font/RobotoSlab.css">
+    <link type="text/css" rel="stylesheet" href="/font/Rosario.css">
+    <link type="text/css" rel="stylesheet" href="/font/UbuntuMono.css">
+
+    <link type="text/css" rel="stylesheet" href="/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/css/code.css">
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <a id="cover"></a>
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
+<div id="header" class="header">
+    <div class="vertical">
+        <div class="inner">
+            
+                <h1 class="header-subtitle">函数与极限连续</h1>
+                <div class="header-subinfo">
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2024-08-04
+                        </span>
+                        
+                            
+                                <span id="/2024/08/04/函数与极限连续/" class="leancloud_visitors" data-flag-title="函数与极限连续">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2024/08/04/函数与极限连续/"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                        
+                            <span class="category-color">高等数学</span>
+                        
+                    
+                    
+                        
+                            <span class="tag-color">高等数学</span>
+                        
+                    
+                </div>
+            
+        </div>
+    </div>
+    
+</div>
+<div id="container">
+    
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数考点"><a href="#函数考点" class="headerlink" title="函数考点"></a>函数考点</h3><p><strong>定义域：</strong>$x$ 的取值范围。</p>
+<p><strong>对应法则：</strong>指对 $x$ 的加工 &#x2F; 处理方式。</p>
+<h3 id="求定义域"><a href="#求定义域" class="headerlink" title="求定义域"></a>求定义域</h3><h4 id="具体函数"><a href="#具体函数" class="headerlink" title="具体函数"></a>具体函数</h4><p>常见的具体函数定义域</p>
+<table>
+<thead>
+<tr>
+<th align="center">具体函数</th>
+<th align="center">定义域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$\textcolor{red}{y&#x3D;\frac{1}{x}}$</td>
+<td align="center">$x\not &#x3D;0$</td>
+</tr>
+<tr>
+<td align="center">$\textcolor{red}{y&#x3D;\sqrt[2n]{x}}$</td>
+<td align="center">$x&gt;&#x3D;0$</td>
+</tr>
+<tr>
+<td align="center">$\textcolor{orange}{y&#x3D;\sqrt[2n+1]{x}}$</td>
+<td align="center">$x\in(-∞,+∞)$</td>
+</tr>
+<tr>
+<td align="center">$y&#x3D;log_a^x$</td>
+<td align="center">$\textcolor{red}{y&#x3D;lnx}$</td>
+</tr>
+<tr>
+<td align="center">$y&#x3D;tanx$</td>
+<td align="center">$x\not&#x3D;k\pi+\frac{\pi}{2}$</td>
+</tr>
+<tr>
+<td align="center">$y&#x3D;cotx$</td>
+<td align="center">$x\not&#x3D;k\pi$</td>
+</tr>
+<tr>
+<td align="center">$y&#x3D;arctanx$</td>
+<td align="center">$y&#x3D;arccotx$</td>
+</tr>
+<tr>
+<td align="center">$\textcolor{red}{y&#x3D;arcsinx}$</td>
+<td align="center">$\textcolor{red}{y&#x3D;arccosx}$</td>
+</tr>
+</tbody></table>
+<p><strong>注：</strong>整体思想</p>
+<p><strong>注：</strong>如果 $x^2&lt;&#x3D;b$ 那么定义域为 $-\sqrt{b}&lt;&#x3D;x&lt;&#x3D;\sqrt{b}$ </p>
+<h4 id="抽象函数"><a href="#抽象函数" class="headerlink" title="抽象函数"></a>抽象函数</h4><p><strong>题型：</strong>已知$f(x)$的定义域，求$f(▢)$中 $x$ 的范围(定义域)。</p>
+<p><strong>解法：</strong>两函数的对应法则一样，则各自括号内的范围相同，函数 1 可得 $a&lt;&#x3D;▢&lt;&#x3D;b $，那么函数 2 也可得 $a&lt;&#x3D;△&lt;&#x3D;b $，由此杰出x的定义域。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; f(x) 中 x\in [-1,3) 则 f(x+2) 的定义域是多少？\<br>&amp; 解：\<br>&amp; ∵f(x)中的x定义域为-1&lt;&#x3D;x&lt;3\<br>&amp; ∴f(x+2)中x的定义域为-1&lt;&#x3D;x+2&lt;3\<br>&amp; ∴解得定义域为-3&lt;&#x3D;x&lt;1\<br>&amp; ∴x\in[-3,1)<br>\end{aligned}<br>$$</p>
+<h3 id="求解函数表达式"><a href="#求解函数表达式" class="headerlink" title="求解函数表达式"></a>求解函数表达式</h3><h5 id="题型一"><a href="#题型一" class="headerlink" title="题型一"></a>题型一</h5><p><strong>题型：</strong>已知 $f(x)$ ,求 $f[f(x)]$ 或者 已知 $f(x)$ $g(x)$ ，求$f[g(x)]$。</p>
+<p><strong>解法：</strong>从外层开始，层层带入即可</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; (1)、eg：f(x)&#x3D;e^x,g(x)&#x3D;sinx,求f[g(x)]\<br>&amp; 解：\<br>&amp; ∵f(x)&#x3D;e^x\<br>&amp; ∴f[g(x)]&#x3D;e^{g(x)}\<br>&amp; ∴f[g(x)]&#x3D;e^{sinx}\<br>\<br>\<br>&amp; (2)、eg：设f(x)&#x3D;\frac{1}{1-x},求f[f(x)]\<br>&amp; ∵f(x)&#x3D;\frac{1}{1-x}\<br>&amp; ∴f[f(x)]&#x3D;\frac{1}{1-f(x)}\<br>&amp; ∴f[f(x)]&#x3D;\frac{1}{1-\frac{1}{1-x}}\<br>&amp; ∴化简得f[f(x)]&#x3D;1-\frac{1}{1-x}&#x3D;\frac{1-x}{1-x}-\frac{1}{1-x}&#x3D;\frac{x}{1-x}&#x3D;\frac{1-x}{x}\<br>&amp; 注：除以1，等于他的倒数<br>\end{aligned}<br>$$</p>
+<h5 id="题型二"><a href="#题型二" class="headerlink" title="题型二"></a>题型二</h5><p><strong>题型：</strong>已知 $f(▢)$ &#x3D; △，求$f(x)$ 。</p>
+<h6 id="换元法"><a href="#换元法" class="headerlink" title="换元法"></a>换元法</h6><p><strong>解法：</strong>使用换元法，通过移项令 $▢ &#x3D; t$ ,再反解出 $x$ 然后再将求出的 $x$ 带入原式中，最后再进行化简即可。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：f(\frac{1}{x}-1)&#x3D;\frac{x}{2x-1},求f(x)\<br>&amp; 解：\<br>&amp; 令\frac{1}{x}-1&#x3D;t,通过移项得x&#x3D;\frac{1}{t+1}\<br>&amp; ∵将上述带入x得：f(t)&#x3D;\frac{\frac{1}{t+1}}{\frac{2}{t+1}-1}\<br>&amp; 化简：f(t)&#x3D;\frac{\frac{1}{t+1}}{\frac{2}{t+1}-\frac{t+1}{t+1}}&#x3D;<br>\frac{\frac{1}{t+1}}{\frac{1-t}{t+1}}&#x3D;<br>\frac{1}{t+1}•\frac{t+1}{1-t}&#x3D;<br>\frac{1}{1-t}\<br>&amp; ∴f(x) &#x3D; \frac{1}{1-t}<br>\end{aligned}<br>$$</p>
+<h6 id="配凑法"><a href="#配凑法" class="headerlink" title="配凑法"></a>配凑法</h6><p><strong>使用：</strong>一般在三角函数和完全平方和差中使用。</p>
+<p><strong>解法：</strong>将 $△$ 配凑成和 $▢$ 一样，然后再用 $x$ 替代即可，替换的时候注意整体思想。</p>
+<p><strong>格式：</strong><br>$$<br>\begin{aligned}<br>&amp; 原式：f(▢) &#x3D; △ → 三角形配凑成▢^2+1\<br>&amp; f(▢)&#x3D;▢^2+1\<br>&amp; 再将x带入得：f(x)&#x3D;x^2+1\<br>\end{aligned}<br>$$</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：f(cos^2x)&#x3D;tan^2x,求f(x)及f(2x)\<br>&amp; 解：\<br>&amp; tan^2x&#x3D;\frac{sin^2x}{cos^2x}&#x3D;\frac{1-cos^2x}{cos^2x}\<br>&amp; 将x带入得：f(x)&#x3D;\frac{1-x}{x}&#x3D;\frac{1}{x}-1\<br>&amp; 将2x带入得：f(2x)&#x3D;\frac{1-2x}{2x}&#x3D;\frac{1}{2x}-1<br>\end{aligned}<br>$$</p>
+<h3 id="反函数"><a href="#反函数" class="headerlink" title="反函数"></a>反函数</h3><p><strong>定义：</strong>以 $y$ 为自变量，$x$ 为因变量的函数，记为：$y&#x3D;f^{-1}x$</p>
+<p><strong>解法思路：</strong>反函数 $y&#x3D;x-2$,通过移项得 $x &#x3D; y + 2$，然后再将 $y$ 换为 $x$ 得 $y&#x3D;x+2$ </p>
+<h3 id="常见的基本初等函数"><a href="#常见的基本初等函数" class="headerlink" title="常见的基本初等函数"></a>常见的基本初等函数</h3><p>注：图像懒得上传了，太多了，自己看手机。</p>
+<h3 id="复数函数及其分解"><a href="#复数函数及其分解" class="headerlink" title="复数函数及其分解"></a>复数函数及其分解</h3><p><strong>考点：</strong>复合函数的分解。</p>
+<p><strong>定义：</strong>称 $y&#x3D;f[g(x)]$ 这种形式的函数为复合函数（函数内套函数就是复合函数）。</p>
+<p><strong>分解原则：</strong>从外向里，层层递进，分解到含 $x$ 的基本初等函数即可停止（每层用u、v、w替代）。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：y&#x3D;sin(ln\sqrt{x^2-1})\<br>&amp; y&#x3D;sinu\<br>&amp; u&#x3D;lnv\<br>&amp; v&#x3D;\sqrt{w} \<br>&amp; w&#x3D;x^2-1<br>\end{aligned}<br>$$</p>
+<h3 id="函数的四大性质"><a href="#函数的四大性质" class="headerlink" title="函数的四大性质"></a>函数的四大性质</h3><h3 id="函数的奇偶性"><a href="#函数的奇偶性" class="headerlink" title="函数的奇偶性"></a><span style="color:red">函数的奇偶性</span></h3><ul>
+<li><p><strong>条件：</strong>$f(x)$ 的定义域关于原点 $(0,0)$ 对称。</p>
+</li>
+<li><p><strong>结论：</strong></p>
+<ol>
+<li><p>$f(x)$ 的图像关于 $y$ 轴对称，称 $f(x)$ 为偶函数。</p>
+<p><strong>注：</strong>此时 $f(-x)&#x3D;f(x)$</p>
+</li>
+<li><p>$f(x)$ 的图像关于原点对称，称 $f(x)$ 奇函数。</p>
+<p><strong>注：</strong>此时 $f(-x)&#x3D;-f(x)$</p>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="常见的奇函数和偶函数"><a href="#常见的奇函数和偶函数" class="headerlink" title="常见的奇函数和偶函数"></a>常见的奇函数和偶函数</h4><table>
+<thead>
+<tr>
+<th align="center">奇函数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$x^{奇数}$</td>
+</tr>
+<tr>
+<td align="center">$sinx$</td>
+</tr>
+<tr>
+<td align="center">$arcsinx$</td>
+</tr>
+<tr>
+<td align="center">$tanx$</td>
+</tr>
+<tr>
+<td align="center">$arctanx$</td>
+</tr>
+</tbody></table>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="center">偶函数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$x^{偶数}$</td>
+</tr>
+<tr>
+<td align="center">$cosx$</td>
+</tr>
+<tr>
+<td align="center">$</td>
+</tr>
+<tr>
+<td align="center">$常数c$</td>
+</tr>
+</tbody></table>
+<h4 id="奇偶函数四则运算性质"><a href="#奇偶函数四则运算性质" class="headerlink" title="奇偶函数四则运算性质"></a>奇偶函数四则运算性质</h4><p>$奇 \pm 奇 &#x3D; 奇$                                      $ \textcolor{red}{奇×(÷) 奇&#x3D;偶}$</p>
+<p>$偶 \pm 偶 &#x3D; 偶$                                      $ \textcolor{red}{奇×(÷) 偶&#x3D;奇}$</p>
+<p>$ \textcolor{red}{奇\pm 偶&#x3D;非奇非偶}$                          $ 偶×(÷) 偶&#x3D;偶$</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：y&#x3D;x^4•sinx的奇偶性\<br>&amp; x^4为偶函数\<br>&amp; sinx为奇函数\<br>&amp; 奇函数乘偶函数得奇函数 \<br>\end{aligned}<br>$$</p>
+<h4 id="复合函数的奇偶性"><a href="#复合函数的奇偶性" class="headerlink" title="复合函数的奇偶性"></a>复合函数的奇偶性</h4><p>$奇(奇) &#x3D; 奇$                $奇(偶) &#x3D; 偶$                $偶(偶)&#x3D; 偶$   </p>
+<p><strong>注：</strong>全奇则奇，遇偶则偶</p>
+<h4 id="题型解法"><a href="#题型解法" class="headerlink" title="题型解法"></a>题型解法</h4><p><strong>题型1：</strong>含常见具体函数，首先使用函数性质判断奇偶性。</p>
+<p><strong>题型2：</strong>含 $f(x)$ 的表达式，使用定义。</p>
+<ul>
+<li><p><strong>解题思路：</strong></p>
+</li>
+<li><p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设f(x)&#x3D;(\frac{e^x+e^{-x}}{2})•sinx^2的奇偶性\<br>&amp; 解：\<br>&amp; 令f(x)&#x3D;(\frac{e^x+e^{-x}}{2})•sinx^2\<br>&amp; ∵f(-x)&#x3D;(\frac{e^{-x}+e^x}{2})•sinx^2\<br>&amp; 注：上述的sinx^2之所以保持原样，是因为sin(-x)^2&#x3D;[(-1)•x]^2,把括号打开x还是x^2\<br>&amp; ∴f(-x)&#x3D;f(x)得此函数为偶函数<br>\end{aligned}<br>$$</p>
+</li>
+</ul>
+<h3 id="函数的有界性"><a href="#函数的有界性" class="headerlink" title="函数的有界性"></a><span style="color:red">函数的有界性</span></h3><p><strong>定义：</strong>若 $f(x)$ 函数值是固定再某个范围内，称 $f(x)$ 为有界函数。</p>
+<p><strong>常见的有界函数：</strong>$arctanx$        $cosx$        $sinx$</p>
+<p><strong>考点：</strong>$0•有界函数&#x3D;0$</p>
+<p><strong>注：</strong>遇见 $sin∞，cos∞，arctan∞$ 考虑有界。</p>
+<h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><h3 id="极限基础"><a href="#极限基础" class="headerlink" title="极限基础"></a>极限基础</h3><p><strong>定型：</strong>极限计算将 $x-&gt;x_0$ 带入计算定型。 再根据类型定解题思路。</p>
+<p>注：在乘除关系中定型时，可先将非零的整数(非零因子)先计算。</p>
+<p>常用：$\frac{c}{\infty}&#x3D;0$         $\frac{c}{0}&#x3D;\infty$      </p>
+<ul>
+<li><strong>函数极限：</strong>$\lim\limits_{x\rightarrow x_0}f(x)&#x3D;A$ ，$A$ 为确定的数。</li>
+<li><strong>数列极限：</strong>$\lim\limits_{x\rightarrow \infty}x_n&#x3D;B$，$B$ 为确定的数。</li>
+<li><strong>左右极限</strong><ul>
+<li>左极限：$\lim\limits_{x\rightarrow x_0^-}f(x)$</li>
+<li>有极限：$\lim\limits_{x\rightarrow x_0^+}f(x)$</li>
+</ul>
+</li>
+<li><strong>极限存在：</strong>左右极限存在且相等。</li>
+</ul>
+<h3 id="函数极限计算-四则运算"><a href="#函数极限计算-四则运算" class="headerlink" title="函数极限计算(四则运算)"></a><span style="color:red">函数极限计算(四则运算)</span></h3><p>设：$\lim f(x)&#x3D;A$                            $\lim f(x)&#x3D;B$</p>
+<ul>
+<li><p>$\lim [f(x) \pm g(x)]&#x3D;\lim f(x) \pm \lim g(x)&#x3D;A\pm B$</p>
+</li>
+<li><p>$\lim f(x) • g(x)&#x3D;\lim f(x) • \lim g(x)&#x3D;A• B$</p>
+</li>
+<li><p>$\lim \frac{f(x)}{g(x)}&#x3D;\frac{\lim f(x)}{\lim g(x)}&#x3D;\frac{A}{B}$</p>
+</li>
+</ul>
+<p>注：前提条件，极限存在。</p>
+<h3 id="极限类型"><a href="#极限类型" class="headerlink" title="极限类型"></a>极限类型</h3><h4 id="洛必达法则"><a href="#洛必达法则" class="headerlink" title="洛必达法则"></a>洛必达法则</h4><p><strong>用法：</strong>分子分母同时求导</p>
+<p><strong>常用导数转换</strong></p>
+<p>$(x^a)’&#x3D;a•x^{a-1}$               $(C)’&#x3D;0$</p>
+<h4 id="frac-infty-infty-类型"><a href="#frac-infty-infty-类型" class="headerlink" title="$\frac{\infty}{\infty}$ 类型"></a>$\frac{\infty}{\infty}$ 类型</h4><p><strong>解法：</strong></p>
+<ol>
+<li>抓大头</li>
+<li>洛必达法则</li>
+</ol>
+<p><strong>题型：</strong></p>
+<ol>
+<li><p>幂函数抓大头</p>
+<p><strong>解法一：</strong>抓次方最高项</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{n\rightarrow \infty} \frac{n^2(2n+1)}{n^3+n+4}\<br>&amp; 解：\<br>&amp; 原式 &#x3D; \lim\limits_{n\rightarrow \infty} \frac{(2n^3+n^2)}{n^3+n+4}\<br>&amp; 注：这里定型：将 \infty 带入式子，得出是 \frac{\infty}{\infty}类型，使用抓大头(次方最高项)\<br>&amp;∴ \lim\limits_{n\rightarrow \infty} \frac{2n^3}{n^3}&#x3D;2\<br>\end{aligned}<br>$$</p>
+<hr>
+<p><strong>解法二：</strong>分子分母同除式子中的最高此项（$x$ 的最高次 or $n$ 的最高次）</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow \infty} \frac{2x^3+x^2-1)}{4x^3-2x^2+x-4}\<br>&amp; 解：\<br>&amp; 注：定型：将 \infty 带入式子，得出是 \frac{\infty}{\infty}类型，同除次方项最高的次项\<br>&amp; 原式&#x3D;\lim\limits_{x\rightarrow \infty} \frac{2+\frac{1}{x}-\frac{1}{x^3})}{4-\frac{2}{x}+\frac{1}{x^2}-\frac{4}{x^3}}&#x3D;\frac{1}{2}\<br>&amp; 注：将\infty带入进去，发现分式都是\frac{c}{\infty}&#x3D;0\</p>
+<p>\end{aligned}<br>$$</p>
+</li>
+<li><p>指数函数</p>
+<p><strong>解法：</strong>抓底数最大项</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow \infty} \frac{8^x}{8^x-5^x}\<br>&amp; 解：\<br>&amp; 注：定型：将 \infty 带入式子，得出是 \frac{\infty}{\infty}，抓底数最大项\<br>&amp;∴ \lim\limits_{n\rightarrow \infty} \frac{8^x}{8^x}&#x3D;1\<br>\end{aligned}<br>$$</p>
+</li>
+<li><p>通过抓大头反求参数</p>
+</li>
+</ol>
+<p>   <strong>解法：</strong></p>
+<ol>
+<li>看分母和分子的最高次项。</li>
+<li>如果分母的最高次大于分子的最高次，值为非零常数。</li>
+<li>如果分母的最高次大于分子的最高次，值为 $0$ 。</li>
+</ol>
+<p>   <strong>例子：</strong><br>   $$<br>   \begin{aligned}<br>   &amp; eg：已知\lim\limits_{x\rightarrow \infty} \frac{(a+1)x^3-bx^2+x-1}{2x^2+3}&#x3D;4,则a和b的值为\<br>   &amp; 解：\<br>   &amp; 注：定型：将 \infty 带入式子，得出是 \frac{\infty}{\infty}，看分母和分子的最高次项\<br>   &amp; 注：因为式子的结果为常数，所以分母和分子的次方项相同\<br>   &amp;∴a+1&#x3D;0,a&#x3D;-1\<br>   &amp;∴\frac{-bx^2+x-1}{2x^3+3}&#x3D;抓次方项最高\frac{-bx^2}{2x^2}&#x3D;(-\frac{b}{2}&#x3D;4)&#x3D;&gt;b&#x3D;-8\<br>   \end{aligned}<br>   $$</p>
+<h4 id="frac-0-0-类型"><a href="#frac-0-0-类型" class="headerlink" title="$\frac{0}{0}$ 类型"></a>$\frac{0}{0}$ 类型</h4><p><strong>解法：</strong></p>
+<ol>
+<li>等价无穷小</li>
+<li>洛必达法则</li>
+</ol>
+<h5 id="常用等价公式"><a href="#常用等价公式" class="headerlink" title="常用等价公式"></a>常用等价公式</h5><p>当 $x$ 趋于 $0$ 时</p>
+<p>$\begin{cases} sinx \Rightarrow x\ arcsinx \Rightarrow x \end{cases}$              $\begin{cases} tanx \Rightarrow x\ arctanx \Rightarrow x \end{cases}$             $\begin{cases} e^x-1 \Rightarrow x\ ln(1+x) \Rightarrow x \end{cases}$</p>
+<p>$1-cosx \Rightarrow \frac{1}{2}x^2$</p>
+<p>$\sqrt[n]{1+x}-1 \Rightarrow \frac{x}{n}$          $(1+ax)^b-1 \Rightarrow abx$</p>
+<p>  $x-sinx \Rightarrow \frac{1}{6}x^3$        $tanx-x \Rightarrow \frac{1}{3}x^3$        $tanx-sinx \Rightarrow \frac{1}{2}x^3$</p>
+<p>$a^x-1 \Rightarrow xlna$             $ln(1+x)-x \Rightarrow -\frac{1}{2}x^2$</p>
+<p><span style="color:red"><strong>注：</strong></span>使用条件，在乘除关系中使用，加减运算慎用；在趋于零的时候使用，使用的时候注意整体思想。</p>
+<p><strong>题型一：</strong>$\frac{0}{0}$ 型函数极限的计算</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：已知\lim\limits_{x\rightarrow 0} \frac{3sinmx}{2x}&#x3D;\frac{3}{2},求m\<br>&amp; 解：\<br>&amp; 注：先定型\<br>&amp; ∵\lim\limits_{x\rightarrow 0} \frac{3sinmx}{2x}&#x3D;\lim\limits_{x\rightarrow 0} \frac{3•mx}{2x}&#x3D;\frac{3}{2}m&#x3D;\frac{3}{2}\<br>&amp;∴m&#x3D;1\<br>\end{aligned}<br>$$<br><strong>题型二：</strong>$\frac{0}{0}$ 型极限存在</p>
+<p><strong>解法：</strong>逆用结论，分子趋于 $0$ ，那么分母就趋于  $0$ ；分母趋于0，那么分子就趋于 $0$ </p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow 0} \frac{a-2e^x-x}{x^2-x}存在,则a的值为\<br>&amp; 解：\<br>&amp; ∵x\rightarrow 0 ，极限存在,分母：x^2-x\rightarrow 0\<br>&amp; 注：极限存在，分母趋于0，分子也要趋于0\<br>&amp; a-2e^x-x\rightarrow 0，即a-2e^0-0&#x3D;0\<br>&amp;∴a&#x3D;2\<br>\end{aligned}<br>$$</p>
+<h4 id="0•有界"><a href="#0•有界" class="headerlink" title="$0•有界$"></a>$0•有界$</h4><p><strong>考点：</strong>遇 $sin\infty，cos\infty，arctan\infty$ ，优先考虑 $0•有界&#x3D;0$ 。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow \infty} (\frac{2sinx}{x}+x•sin\frac{1}{x})&#x3D;\<br>&amp; 解：\lim\limits_{x\rightarrow \infty} \frac{2sinx}{x}\lim\limits_{x\rightarrow \infty}{x•sin\frac{1}{x}}\<br>&amp;∵ 带入\infty定型\lim\limits_{x\rightarrow \infty} \frac{2}{x}•sinx，得0•有界&#x3D;0\<br>&amp;∴\lim\limits_{x\rightarrow \infty} \frac{2}{x}•sinx&#x3D;0\<br>&amp;∵\lim\limits_{x\rightarrow \infty}{x•sin\frac{1}{x}}，定型sin\frac{1}{x}趋于0，式子等价得x•\frac{1}{x}\<br>&amp;∴\lim\limits_{x\rightarrow \infty}{x•sin\frac{1}{x}}&#x3D;1\<br>&amp;∴0+1&#x3D;1<br>\end{aligned}<br>$$</p>
+<h4 id="0•-infty-极限计算"><a href="#0•-infty-极限计算" class="headerlink" title="$0•\infty$极限计算"></a>$0•\infty$极限计算</h4><p><strong>解法：</strong>下放</p>
+<p>$0•\infty\begin{cases} 对0取倒数，然后下放去做分母，让其形成\frac{\infty}{\infty}型\ 对\infty取倒数，然后下放去做分母，让其形成\frac{0}{0}型 \end{cases}$</p>
+<p>注：下放原则$\begin{cases} 一般来说，下放简单易求导的函数\ 遇到有三角函数(tanx,cotx)，先化简\end{cases}$</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow 0} x•lnx\<br>&amp; 解：定型得0•\infty类型，下放x得\<br>&amp; 原式：\lim\limits_{x\rightarrow 0} \frac{lnx}{\frac{1}{x}}\<br>&amp; &#x3D;\lim\limits_{x\rightarrow 0} \frac{\frac{1}{x}}{-\frac{1}{x^2}}\<br>&amp;&#x3D;\lim\limits_{x\rightarrow 0} \frac{1}{x}•(-\frac{x^2}{1})\<br>&amp;&#x3D;\lim\limits_{x\rightarrow 0} -x\<br>&amp;&#x3D;0\<br>\end{aligned}<br>$$</p>
+<h4 id="infty-infty-极限计算"><a href="#infty-infty-极限计算" class="headerlink" title="$\infty-\infty$极限计算"></a>$\infty-\infty$极限计算</h4><p><strong>题型与解法</strong>$\begin{cases}分式\Rightarrow通分\根式\Rightarrow根式有理化，利用 (a+b)(a-b)&#x3D;a^2-b^2去根号\end{cases}$</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; 分式：\<br>&amp;eg：\lim\limits_{x\rightarrow 0} (\frac{1}{x^2}-\frac{sinx}{x^3})\<br>&amp; 解：定型得\infty-\infty类型\<br>&amp; 通分得原式：\lim\limits_{x\rightarrow 0} (\frac{x}{x^3}-\frac{sinx}{x^3})\<br>&amp;&#x3D;\lim\limits_{x\rightarrow 0} (\frac{x-sinx}{x^3})，再定型得\frac{0}{0}型，x-sinx等价等于\frac{1}{6}x^3\<br>&amp;&#x3D;\lim\limits_{x\rightarrow 0} \frac{\frac{1}{6}x^3}{x^3}\<br>&amp;&#x3D;\frac{1}{6}\<br>\<br>\<br>&amp; 根式：\<br>&amp;eg：\lim\limits_{x\rightarrow +\infty} (\sqrt{x^2+4x+1}-x)\<br>&amp; 解：定型得\infty-\infty类型\<br>&amp; 根式有理化得原式：\lim\limits_{x\rightarrow +\infty} (\frac{(\sqrt{x^2+4x+1}-x)•(\sqrt{x^2+4x+1}+x)}{\sqrt{x^2+4x+1}+x})\<br>&amp;&#x3D;\lim\limits_{x\rightarrow +\infty} \frac{x^2+4x+1-x^2}{\sqrt{x^2+4x+1}+x}\<br>&amp;&#x3D;\lim\limits_{x\rightarrow +\infty} \frac{4x+1}{\sqrt{x^2+4x+1}+x}再定型得\frac{\infty}{\infty}型，抓大头得\<br>&amp;&#x3D;\lim\limits_{x\rightarrow +\infty} \frac{4x}{\sqrt{x^2}+x}&#x3D;\lim\limits_{x\rightarrow +\infty} \frac{4x}{x+x}&#x3D;\lim\limits_{x\rightarrow +\infty} \frac{4x}{2x}\<br>&amp;&#x3D;2<br>\end{aligned}<br>$$</p>
+<h4 id="U-v-极限计算"><a href="#U-v-极限计算" class="headerlink" title="$U^v$极限计算"></a>$U^v$极限计算</h4><p>$U^v\begin{cases}1^\infty\不是1^\infty，(0^0,\infty^0)\end{cases}$</p>
+<h5 id="1-infty"><a href="#1-infty" class="headerlink" title="$1^\infty$"></a>$1^\infty$</h5><p><strong>第一重要极限：</strong>$\lim\limits_{▢\rightarrow 0} (1+▢)^\frac{1}{▢}&#x3D;e$</p>
+<p><strong>解法：</strong>$\begin{cases}1、u^v\Rightarrow e^{\lim(u-1)•v}\2、次方很多e^{ln狗}&#x3D;狗&lt;&#x3D;&gt;U^v&#x3D;e^{vlnu}(幂指数函数对数化)\end{cases}$</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow 0} (cosx)^\frac{1}{x^2}\<br>&amp; 解：定型得u^v类型\<br>&amp; 原式：\lim\limits_{x\rightarrow 0} e^{\lim\limits_{x\rightarrow 0} (cosx-1)•\frac{1}{x^2}}\<br>&amp; &#x3D;e^{\lim\limits_{x\rightarrow 0} \frac{cosx-1}{x^2}}，再定型得\frac{0}{0}型，等价得\<br>&amp;&#x3D;e^{\lim\limits_{x\rightarrow 0} \frac{-\frac{1}{2}x^2}{x^2}}\<br>&amp;&#x3D;e^{-\frac{1}{2}}\<br>\end{aligned}<br>$$</p>
+<h5 id="不是-1-infty，是0-0，-infty-0"><a href="#不是-1-infty，是0-0，-infty-0" class="headerlink" title="不是$1^\infty，是0^0，\infty^0$"></a>不是$1^\infty，是0^0，\infty^0$</h5><p><strong>解法：</strong>$U^v\Rightarrow U^v&#x3D;e^{vlnu}$，转化成复合型函数。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow 0} x^{sinx}\<br>&amp; 解：定型得0^0类型\<br>&amp; 原式：e^{\lim\limits_{x\rightarrow 0} sinx•lnx}，sinx趋于0，等价于x得\<br>&amp; &#x3D;e^{\lim\limits_{x\rightarrow 0} x•lnx}，再定型得0•\infty型，下放得\<br>&amp;&#x3D;e^{\lim\limits_{x\rightarrow 0} \frac{lnx}{\frac{1}{x}}}，洛必达两边求导得：\<br>&amp;&#x3D;e^{\lim\limits_{x\rightarrow 0} \frac{\frac{1}{x}}{\frac{1}{x^2}}}\<br>&amp;&#x3D;e^{\lim\limits_{x\rightarrow 0} -x},带入0得\<br>&amp;&#x3D;e^0&#x3D;1<br>\end{aligned}<br>$$</p>
+<h3 id="函数的左右极限"><a href="#函数的左右极限" class="headerlink" title="函数的左右极限"></a>函数的左右极限</h3><p><strong>定义：</strong>极限存在&lt;&#x3D;&gt;左右极限存在且相等。</p>
+<h4 id="左右极限相关的函数"><a href="#左右极限相关的函数" class="headerlink" title="左右极限相关的函数"></a>左右极限相关的函数</h4><ul>
+<li><p><strong>分段函数：</strong>以分段点为界，左边一个函数，右边一个函数，就为分段函数。</p>
+<p>注：遇到分段函数 $\Rightarrow$ 考虑左右极限</p>
+</li>
+<li><p>$y&#x3D;\frac{1}{x}$</p>
+<p>$x\rightarrow0^+，\frac{1}{x}\rightarrow +\infty$</p>
+<p>$x\rightarrow0^-，\frac{1}{x}\rightarrow -\infty$</p>
+</li>
+<li><p>指数函数：$y&#x3D;e^x$</p>
+<p>$x\rightarrow +\infty，e^x\rightarrow +\infty$</p>
+<p>$x\rightarrow -\infty，e^x\rightarrow 0$</p>
+</li>
+<li><p>$arctanx$</p>
+<p>$x\rightarrow +\infty，arctanx\rightarrow \frac{\pi}{2}$</p>
+<p>$x\rightarrow -\infty，arctanx\rightarrow -\frac{\pi}{2}$</p>
+</li>
+</ul>
+<h4 id="左右极限的函数类型"><a href="#左右极限的函数类型" class="headerlink" title="左右极限的函数类型"></a>左右极限的函数类型</h4><ul>
+<li>分段函数</li>
+<li>含绝对值的函数，如$|x|\begin{cases} x，x&gt;&#x3D;0\-x，x&lt;&#x3D;0 \end{cases}$</li>
+<li>遇$e^\infty，\frac{c}{0}，arctan\infty$</li>
+</ul>
+<h3 id="夹逼定理"><a href="#夹逼定理" class="headerlink" title="夹逼定理"></a>夹逼定理</h3><p><strong>定义：</strong>若函数 $f(x)、g(x)、h(x)$ ，在 $x_0$ 的领域范围内有：$f(x)&lt;&#x3D;g(x)&lt;&#x3D;h(x)$，也就是当 $\lim\limits_{x\rightarrow x_0} f(x)&#x3D;\lim\limits_{x\rightarrow x_0} h(x)&#x3D;A$ 时，则$\lim\limits_{x\rightarrow x_0} g(x)&#x3D;A$</p>
+<p><strong>适用条件：</strong>无穷项求和型极限</p>
+<p><strong>使用步骤：</strong></p>
+<ol>
+<li>确定极限项数。</li>
+<li>确定最小项，确定最大项（分母小值越大，分母大值越小）。</li>
+<li>取极限：$n•最小项极限&lt;&#x3D;待求极限&lt;&#x3D;n•最大项极限$</li>
+<li>由夹逼定理出结果。</li>
+</ol>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：\lim\limits_{x\rightarrow \infty} (\frac{1}{n^2+n-1}+\frac{1}{n^2+n-1}+…..+\frac{1}{n^2+n-n})\<br>&amp; 解：∵\frac{1}{n^2+n-1}•n&lt;&#x3D;\frac{1}{n^2+n-1}+\frac{1}{n^2+n-1}+…..+\frac{1}{n^2+n-n}&lt;&#x3D;\frac{1}{n^2+n-n}•n\<br>&amp; 左边极限：\lim\limits_{x\rightarrow \infty}\frac{n}{n^2+n-1}&#x3D;0\<br>&amp;右边极限：\lim\limits_{x\rightarrow \infty}\frac{n}{n^2+n-n}&#x3D;0\<br>&amp;故有夹逼定理\frac{1}{n^2+n-1}+\frac{1}{n^2+n-1}+…..+\frac{1}{n^2+n-n}&#x3D;0\<br>\end{aligned}<br>$$</p>
+<h3 id="函数的连续与间断"><a href="#函数的连续与间断" class="headerlink" title="函数的连续与间断"></a>函数的连续与间断</h3><h4 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h4><p><strong>定义：</strong>极限连续，那么左极限&#x3D;右极限&#x3D;函数值（极限值&#x3D;函数值）。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设f(x)\begin{cases} (1-x)^\frac{1}{x}，x\not&#x3D; 0\ a，x&#x3D;0\end{cases} 在x&#x3D;0处连续，则a的值为\<br>&amp; 解：x&#x3D;0，函数值f(0)&#x3D;a\<br>&amp; ∵左极限\lim\limits_{x\rightarrow 0^-} (1-x)^\frac{1}{x}&#x3D;e^{-1}\<br>&amp; ∴a&#x3D;e^{-1}<br>\end{aligned}<br>$$</p>
+<h4 id="间断"><a href="#间断" class="headerlink" title="间断"></a>间断</h4><p><strong>定义：</strong>函数在定义区间不再连续，所以叫间断。</p>
+<p><strong>间断点：</strong>指函数不连续的点。</p>
+<p><strong>间断点的类型：</strong></p>
+<ol>
+<li><p><strong>第一类间断点：</strong>指函数左右极限均存在的间断。</p>
+<p>跳跃间断点：左极限 $\not&#x3D;$ 右极限</p>
+<p>可去间断点：左极限 $&#x3D;$ 右极限</p>
+</li>
+<li><p><strong>第二类间断点：</strong>指函数左右极限不存在的间断。</p>
+<p>无穷间断点：指左右极限为 $\infty$ 。</p>
+<p>振荡间断点：指 $x\rightarrow x_0$ 时函数值 $f(x)$，剧烈的波动无定值。</p>
+</li>
+</ol>
+<p>注：$x&#x3D;0$ 是 $f(x)&#x3D;sin\frac{1}{x}$ 的振荡间断点。</p>
+<p><strong>考点：</strong>间断点的识别。</p>
+<ol>
+<li>分式中，分母 $&#x3D;0$ 的点，分母为 $0$ 有定义，必是间断点。</li>
+<li>分段函数的分段点，可能是间断点。</li>
+<li>函数的无定义点，必是间断点。</li>
+</ol>
+<p><strong>解法：</strong></p>
+<ol>
+<li>找到可疑间断点。</li>
+<li>分别找到间断点的左右极限。</li>
+<li>根据左右极限情况，定类型。</li>
+</ol>
+<p><strong>常考题型：</strong></p>
+<ol>
+<li><p>判断间断点个数</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设f(x)&#x3D;\frac{1}{(x+1)(x-1)(x-2)} 的间断电脑个数为：\<br>&amp; 解：分式，间断点分母&#x3D;0，令(x+1)(x-1)(x-2)&#x3D;0\<br>&amp; x_1&#x3D;x+1，x_2&#x3D;x-1，x_3&#x3D;x-2\<br>&amp;所以间断点有3个。<br>\end{aligned}<br>$$</p>
+</li>
+<li><p>判断类型</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：讨论f(x)&#x3D;\begin{cases}e^\frac{1}{x}，x&lt;0\0，x&#x3D;0\arctan\frac{1}{x}，x&gt;0\end{cases}的间断点\<br>&amp; 解：\<br>&amp; ∵\lim\limits_{x\rightarrow 0^-}e^\frac{1}{x}，x\rightarrow 0^-，那么等于e^{-\infty}&#x3D;0\<br>&amp;∴\lim\limits_{x\rightarrow 0^-}e^\frac{1}{x}&#x3D;0\<br>&amp;∵\lim\limits_{x\rightarrow 0^+}arctan\frac{1}{x}，x\rightarrow 0^+，那么等于\frac{1}{x}\rightarrow +\infty\<br>&amp;∴arctan\frac{1}{x}&#x3D;+\infty\<br>&amp;故左极限\not&#x3D;有极限，∴x&#x3D;0是跳跃间断点<br>\end{aligned}<br>$$</p>
+</li>
+</ol>
+<h3 id="无穷小量及其比较"><a href="#无穷小量及其比较" class="headerlink" title="无穷小量及其比较"></a>无穷小量及其比较</h3><ol>
+<li><p>无穷小量与无穷大量</p>
+<p>无穷小量：若 $\lim f(x) &#x3D; 0$ 称此时的 $f(x)$ 为无穷小量，极限为0</p>
+<p>无穷大量：若 $\lim f(x) &#x3D; \infty$ 称此时的 $f(x)$ 为无穷大量</p>
+<p>注：$0$ 也是无穷小量。</p>
+</li>
+<li><p>无穷小量与无穷大量的关系</p>
+<p>$\frac{1}{无穷大}&#x3D;无穷小$                       $\frac{1}{不为0的无穷小}&#x3D;无穷大$</p>
+</li>
+</ol>
+<p><strong>无穷小量的运算：</strong>取次方最低。</p>
+<p><strong>无穷小的比较</strong>：指比较无穷小靠近 $0$ 的速度的快慢。</p>
+<p><strong>无穷小的阶：</strong>指 $0$ 的次方，阶越高，越趋于 $0$。</p>
+<h4 id="无穷小的类型"><a href="#无穷小的类型" class="headerlink" title="无穷小的类型"></a>无穷小的类型</h4><p>设 $\alpha，\beta$ 是两个无穷小。</p>
+<ol>
+<li>若 $\lim \frac{\beta}{\alpha}&#x3D;c \not&#x3D;0$，称 $\alpha$ 与 $\beta$ 同阶。</li>
+<li>若 $\lim \frac{\beta}{\alpha}&#x3D;1 $，称 $\alpha$ 与 $\beta$ 等价。</li>
+<li>若 $\lim \frac{\beta}{\alpha}&#x3D;\infty$，称 $\beta$ 比 \alpha$ 低阶。</li>
+<li>若 $\lim \frac{\beta}{\alpha}&#x3D;0$，称 $\beta$ 比 \alpha$ 高阶。</li>
+<li>若 $\lim \frac{\beta}{\alpha ^k}&#x3D;c$， $\beta$ 是 $\alpha$ 的 $k$ 阶。</li>
+</ol>
+<p><strong>题型：</strong></p>
+<ul>
+<li>判断两无穷小的关系</li>
+<li>指出某无穷小的阶数</li>
+<li>已知无穷小的阶段，反求参数</li>
+</ul>
+<p><strong>解法：</strong></p>
+<ul>
+<li>取 $lim\frac{\beta}{\alpha}$，根据结论得结果</li>
+<li>优先用等价</li>
+</ul>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="轻风">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>轻风
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/2024/08/04/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/" target="_blank">函数与极限连续</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+                
+                    <div class="category">
+                        分类：
+                        
+                            <a href="/category/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
+                        
+                    </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/2024/08/04/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="prev-prefix">« </a> 上一篇：    <a href="/2024/08/04/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" title="发布于 2024-08-04 08:39">高数基础</a>
+                        <br>
+                    
+                    
+                        <a href="/2024/08/04/%E5%AF%BC%E6%95%B0/" class="next-prefix">» </a> 下一篇：    <a href="/2024/08/04/%E5%AF%BC%E6%95%B0/" title="发布于 2024-08-04 08:39">导数</a>
+                    
+                </div>
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
+            </div>
+        
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
+    
+</div>
+    <div id="footer">
+    <div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class='iconfont icon-like-fill'></i></span>何事秋风悲画扇】</div><div>&copy; 2023-2029 轻风. All Rights Reserved.</div>
+</div>
+    <div id="sidebar">
+    <div class="menu-wrap" style="display:none;">
+        
+            <div class="menu-notice">
+                <span class="iconfont icon-notice"></span>
+                <div class="notice">
+                    <span>好好地享受青春，你无法比此刻更年轻了</span>
+                </div>
+            </div>
+        
+        <nav class="menu">
+            <div class="menu-introduce"> 
+                <div class="introduce-avatar">
+                    <img src="/image/sidebar/avatar.jpg">
+                </div> 
+                <div class="introduce-info"> 
+                    <div class="introduce-user">
+                        
+                            <a href="https://worstone.cn" target="_blank"><span>轻风</span></a>
+                        
+                    </div>
+                </div> 
+            </div> 
+            <div class="menu-list">
+                <ul>
+                    
+                        <li class=""><a href="/" class="" target="_self"><span class="iconfont icon-home-fill"></span>首页</a></li>
+                    
+                        <li class=""><a href="/category" class="" target="_self"><span class="iconfont icon-folder-fill"></span>分类</a></li>
+                    
+                        <li class=""><a href="/tag" class="" target="_self"><span class="iconfont icon-discount-fill"></span>标签</a></li>
+                    
+                        <li class=""><a href="/archive" class="" target="_self"><span class="iconfont icon-calendar-fill"></span>归档</a></li>
+                    
+                        <li class=""><a href="/about" class="" target="_self"><span class="iconfont icon-about-fill"></span>关于</a></li>
+                    
+                        <li class=""><a href="javascript:;" class="search" target="_self"><span class="iconfont icon-search-menu"></span>搜索</a></li>
+                    
+                </ul> 
+            </div> 
+            <div class="menu-link">
+                <div class="box">
+                    <div class="image-box"></div>
+                </div>
+                
+                    <a name="GitHub" href="https://github.com/Then-what" class="" target="_blank" data=""><span class="iconfont icon-github"></span></a>
+                
+                    <a name="QQ" href="mailto:1472034696@qq.com" class="" target="_blank" data=""><span class="iconfont icon-qq"></span></a>
+                
+            </div> 
+        </nav>
+        <button class="menu-button-close"></button>
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+            </svg>
+        </div>
+    </div>
+    <button class="menu-button-open">MENU</button>
+    <div class="menu-cover"></div>
+</div>
+    <link type="text/css" rel="stylesheet" href="/css/search.css">
+<script type="text/javascript" src="/js/iscroll.js"></script>
+<script type="text/javascript" src="/js/instantsearch.min.js"></script>
+<div class="search-window">
+    <div class="search-content">
+        <div class="search-content-icon">
+            <i class="iconfont icon-search"></i>
+        </div>
+        <div id="search-input" class="search-input"></div>
+    </div>
+
+    <div class="search-scroll">
+        <div class="search-result">
+            <div id="search-stats" class="search-stats"></div>
+            <div id="search-hits"></div>
+            <div id="search-pagination" class="search-pagination"></div>
+        </div>
+    </div>
+
+    <span class="search-close-icon">
+        <i class="iconfont icon-close"></i>
+    </span>
+</div>
+    <div id="tools">
+    <div class="progressbar-top"></div>
+    
+    <link type="text/css" rel="stylesheet" href="/css/APlayer.css">
+    <script type="text/javascript" src="/js/APlayer.min.js"></script>
+    <script type="text/javascript" src="/js/Meting.min.js"></script>
+    <script>
+        var meting_api = 'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+    </script>
+    <meting-js id="7644470448" lrcshow="false" server="netease" type="playlist" fixed="true" autoplay="false" loop="all" order="random" preload="auto" volume="0.67" mutex="true"></meting-js>
+
+    <div class="wrap-right">
+    <div class="wrap-right-hide">
+         <div class="wrap-right-button favorites">
+            <div class="iconbox" switch="false">
+                <span class="iconfont icon-favorites"></span>
+            </div>
+            <span class="icontext">关注</span>
+         </div>
+        <div class="wrap-right-button search">
+            <div class="iconbox">
+                <span class="iconfont icon-search-menu"></span>
+            </div>
+            <span class="icontext">搜索</span>
+        </div>
+        <div class="wrap-right-button menu-button">
+            <div class="iconbox">
+                <span class="iconfont icon-menu"></span>
+            </div>
+            <span class="icontext">菜单</span>
+        </div>
+        <div class="wrap-right-button mode">
+            <div class="light">
+                <div class="iconbox">
+                    <span class="iconfont icon-daymode"></span>
+                </div>
+                <span class="icontext">浅色模式</span>
+            </div>
+            <div class="dark">
+                <div class="iconbox">
+                    <span class="iconfont icon-nightmode-fill"></span>
+                </div>
+                <span class="icontext">深色模式</span>
+            </div>
+        </div>
+        <div class="wrap-right-button bottom">
+            <div class="iconbox">
+                <span class="iconfont icon-top"></span>
+            </div>
+            <span class="icontext">跳至底部</span>
+        </div>
+    </div>
+    <div class="wrap-right-show">
+        <div class="wrap-right-button set">
+            <div class="iconbox">
+                <span class="iconfont icon-setting"></span>
+            </div>
+            <span class="icontext">设置</span>
+        </div>
+        <div class="wrap-right-button top">
+            <div class="iconbox">
+                <span class="iconfont icon-top"></span>
+            </div>
+            <span class="icontext">返回顶部</span>
+        </div>
+    </div>
+</div>
+    <div class="loading"></div>
+</div>
+    <script>
+    window.config = {
+        GitHubUserName     : "first19326",
+        GitHubRepositories : "Hexo-LiveForCode",
+
+        User             : "轻风",
+        UserAvatar       : "/image/sidebar/avatar.jpg",
+        WebsiteStartDate : "2023-07-09",
+        Home             : "https://worstone.cn",
+
+        WebsiteTitleBlur         : "(◍´꒳`◍) Hi, Live For Code",
+        WebsiteTitleBlurTimeOut  : 500,
+        WebsiteTitleFocus        : "(*´∇｀*) 欢迎回来!",
+        WebsiteTitleFocusTimeOut : 1000,
+        WebsiteFavicon           : {
+            light : "/image/website/logo/logo.png",
+            dark  : "/image/website/logo/logo-dark.png"
+        },
+
+        ProgressBar : {
+            id       : "topProgressBar",
+            color    : "#77B6FF",
+            height   : "2px",
+            duration : 0.2
+        },
+
+        Loading: {
+            rebound : {
+                tension  : 16,
+                friction : 5
+            },
+            spinner : {
+                id     : "spinner",
+                radius : 90,
+                sides  : 3,
+                depth  : 4,
+                colors : {
+                    background : "#F0F0F0",
+                    stroke     : "#272633",
+                    base       : "",
+                    child      : "#272633"
+                },
+                alwaysForward : true,
+                restAt        : 0.5,
+                renderBase    : false
+            }
+        },
+
+        HomeHeaderAnimationRendered : true,
+        HomeHeaderAnimation         : {
+            radius      : 15,
+            density     : 0.2,
+            color       : "rgba(255, 255, 255, .2)",
+            clearOffset : 0.3
+        },
+
+        BackAnimationRendered          : true,
+        IEBrowserBackAnimationRendered : false,
+        BackAnimation                  : {
+            colorSaturation  : "60%",
+            colorBrightness  : "50%",
+            colorAlpha       : 0.5,
+            colorCycleSpeed  : 5,
+            verticalPosition : "random",
+            horizontalSpeed  : 200,
+            ribbonCount      : 3,
+            strokeSize       : 0,
+            parallaxAmount   : -0.2,
+            animateSections  : true
+        },
+
+        HomeHeaderImage : [
+            
+                "/image/header/home.jpg",
+            
+                "/image/header/home.jpeg",
+            
+        ],
+        HomeBannerText  : "",
+
+        ArticleHeaderImage : [
+            
+                "/image/header/article.jpg",
+            
+        ],
+
+        OtherBannerText : "",
+
+        Error : {
+            icon    : "icon-swimming",
+            title   : "PAGE NOT FOUND",
+            content : [
+                
+                    "很抱歉，您访问的页面不存在！",
+                
+                    "可能是输入地址有误或该地址已变更。",
+                
+            ],
+            buttons : [
+                
+                    {
+                        icon  : "icon-home",
+                        text  : "返回首页",
+                        href  : "/",
+                        class : ""
+                    },
+                
+            ]
+        },
+
+        MenuNotice : {
+            enable : true,
+            notice : "好好地享受青春，你无法比此刻更年轻了",
+            speed  : 20
+        },
+        MenuList : [
+            
+                {
+                    name   : "首页",
+                    icon   : "icon-home-fill",
+                    href   : "/",
+                    type   : "index",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "分类",
+                    icon   : "icon-folder-fill",
+                    href   : "/category",
+                    type   : "category",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "标签",
+                    icon   : "icon-discount-fill",
+                    href   : "/tag",
+                    type   : "tag",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "归档",
+                    icon   : "icon-calendar-fill",
+                    href   : "/archive",
+                    type   : "archive",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "关于",
+                    icon   : "icon-about-fill",
+                    href   : "/about",
+                    type   : "about",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "搜索",
+                    icon   : "icon-search-menu",
+                    href   : "javascript:;",
+                    type   : "",
+                    class  : "search",
+                    target : "_self"
+                },
+            
+        ],
+        MenuLink : [
+            
+                
+                    {
+                        name   : "GitHub",
+                        icon   : "icon-github",
+                        href   : "https://github.com/Then-what",
+                        class  : "",
+                        target : "_blank",
+                        image  : ""
+                    },
+                
+                    {
+                        name   : "QQ",
+                        icon   : "icon-qq",
+                        href   : "mailto:1472034696@qq.com",
+                        class  : "",
+                        target : "_blank",
+                        image  : ""
+                    },
+                
+            
+        ],
+
+        FooterStyle : 2,
+        BottomText  : "<div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class='iconfont icon-like-fill'></i></span>何事秋风悲画扇】</div><div>&copy; 2023-2029 轻风. All Rights Reserved.</div>",
+
+        ConsoleList : [
+            
+                
+                    [
+                        
+                            
+                                "Based on cnblogs theme SimpleMemory.",
+                            
+                                "",
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                "SimpleMemory Author:",
+                            
+                                "BNDong",
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                "Theme:",
+                            
+                                "LiveForCode",
+                            
+                        
+                    ],
+                
+            
+        ],
+
+        FontIconExtend : "",
+
+        Donate : {
+            paypal  : "",
+            bitcoin : "",
+            alipay  : "/image/donate/alipay.png",
+            wechat  : "/image/donate/wechat.png"
+        },
+
+        Search : {
+            applicationID : "010C3EANT8",
+            apiKey        : "c7abab9f11b79102b9aff7fe6d41447d",
+            indexName     : "Notes",
+            hits          : {
+                page : 10
+            },
+            labels        : {
+                placeholder : "搜索",
+                empty       : "未发现与 「${query}」 相关的内容",
+                stats       : "${hits} 条相关条目，使用了 ${time} 毫秒",
+            }
+        }, 
+
+        Comment : {
+            switch : true,
+            type   : "Valine",
+        },
+
+        Waline : {
+            el              : ".comments-content",
+            serverURL       : "",
+            path            : window.location.pathname,
+            meta            : "['nick', 'mail', 'link']",
+            requiredMeta    : "['nick', 'mail']",
+            pageSize        : 10,
+            lang            : "zh-cn",
+            locale: {
+                admin       : "博主",
+                anonymous   : "匿名用户",
+                sofa        : "快来做第一个评论的人吧 ~",
+                placeholder : "你是我一生只会遇见一次的惊喜...",
+            },
+            dark            : "html[color-scheme='dark']",
+            search          : false,
+            pageview        : true,
+            comment         : true,
+            copyright       : false,
+        },
+
+        Valine : {
+            el             : ".comments-content",
+            appId          : "srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz",
+            appKey         : "8uVSP1q6UlALVC5igYfIfv2h",
+            serverURLs     : "",
+            placeholder    : "你是我一生只会遇见一次的惊喜...",
+            avatar         : "mm",
+            meta           : "nick,mail,link",
+            requiredFields : "nick,mail",
+            pageSize       : 5,
+            lang           : "zh-cn",
+            visitor        : true,
+            enableQQ       : true
+        },
+
+        Tocbot : {
+            switch                : true,
+            tocSelector           : ".toc",
+            contentSelector       : ".article-body",
+            headingSelector       : "h1, h2, h3, h4, h5",
+            headingsOffset        : 0,
+            scrollSmooth          : true,
+            scrollSmoothOffset    : -5,
+            positionFixedSelector : ".toc",
+            positionFixedClass    : "toc-fixed",
+            fixedSidebarOffset    : "",
+        },
+
+        Require : {
+            baseUrl     : "/js/",
+            waitSeconds : 100
+        },
+
+        Music : {
+            type : "Meting"
+        },
+        APlayer : {
+            container : ".aplayer",
+            fixed     : true,
+            autoplay  : false,
+            loop      : "all",
+            order     : "random",
+            preload   : "auto",
+            volume    : 0.67,
+            mutex     : true,
+            lrcType   : 3,
+            audio     : [
+                
+                    {
+                        name   : "Endless Tears",
+                        artist : "CLIFF EDGE",
+                        cover  : "/music/cover/Endless Tears.jpg",
+                        url    : "/music/song/Endless Tears.mp3",
+                        lrc    : "/music/lrc/Endless Tears.lrc"
+                    },
+                
+            ]
+        },
+        Meting : {
+            api      : "https://api.i-meto.com/meting/api",
+            id       : "7644470448", 
+            lrcshow  : false, 
+            server   : "netease", 
+            type     : "playlist", 
+            fixed    : true, 
+            autoplay : false, 
+            loop     : "all", 
+            order    : "random", 
+            preload  : "auto", 
+            volume   : 0.67, 
+            mutex    : true
+        },
+
+        Mouse : {
+            enable  : true,
+            options : {
+                size  : 6,
+                sizeF : 24
+            }
+        },
+
+        LazyLoad : {
+            default : "/image/website/lazyload.svg"
+        },
+  
+        Style : {
+            aplayer          : "/css/APlayer.css",
+            archive          : "/css/archive.css",
+            base             : "/css/base.css",
+            clipboard        : "/css/clipboard.css",
+            code             : "/css/code.css",
+            donate           : "/css/donate.css",
+            fancybox         : "/css/jquery.fancybox.css",
+            footer           : "/css/footer.css",
+            iconfont         : "/iconfont/iconfont.css",
+            index            : "/css/index.css",
+            menuBubble       : "/css/menu-bubble.css",
+            mouse            : "/css/mouse.css",
+            page             : "/css/page.css",
+            post             : "/css/post.css",
+            search           : "/css/search.css",
+            tocbot           : "/css/tocbot.css",
+            valine           : "/css/valine.css",
+            waline           : "/css/waline.css",
+            walineCustom     : "/css/waline-custom.css"
+        },
+
+        Script: {
+            aplayer          : "/js/APlayer.min.js",
+            config           : "/js/require.config.js",
+            index            : "/js/index.js",
+            instantSearch    : "/js/instantsearch.min.js",
+            iscroll          : "/js/iscroll.js",
+            jQuery           : "/js/jquery-3.4.1.min.js",
+            loading          : "/js/loading.js",
+            meting           : "/js/Meting.min.js",
+            require          : "/js/require.min.js",
+            waline           : "/js/waline.mjs",
+            pageview         : "/js/pageview.mjs",
+            comment          : "/js/comment.mjs",
+        },
+
+        Font: {
+            LongCang    : "/font/LongCang.css",
+            Monda       : "/font/Monda.css",
+            NotoSansSC  : "/font/NotoSansSC.css",
+            NotoSerifSC : "/font/NotoSerifSC.css",
+            Playball    : "/font/Playball.css",
+            PTMono      : "/font/PTMono.css",
+            Roboto      : "/font/Roboto.css",
+            RobotoSlab  : "/font/RobotoSlab.css",
+            Rosario     : "/font/Rosario.css",
+            UbuntuMono  : "/font/UbuntuMono.css"
+        },
+
+        Suffix : {
+            about : "简单地活着, 肆意又精彩."
+        },
+            
+        Theme : {
+            url  : "https://github.com/first19326/Hexo-LiveForCode",
+            name : "Hexo - Live For Code"
+        }  
+    };
+</script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

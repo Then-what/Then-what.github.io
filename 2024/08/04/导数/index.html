@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            数据结构
+            导数
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -37,33 +37,33 @@
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">数据结构</h1>
+                <h1 class="header-subtitle">导数</h1>
                 <div class="header-subinfo">
                     <p class="article-info-text">
                         <span>
-                            <i class="iconfont icon-time"></i> 发表时间：2024-01-21
+                            <i class="iconfont icon-time"></i> 发表时间：2024-08-04
                         </span>
                         
                             
-                                <span id="/2024/01/21/数据结构/" class="leancloud_visitors" data-flag-title="数据结构">
+                                <span id="/2024/08/04/导数/" class="leancloud_visitors" data-flag-title="导数">
                                     <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
                                 </span>
                             
                             
                                 <span>
-                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2024/01/21/数据结构/"></span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2024/08/04/导数/"></span>
                                 </span>
                               
                         
                     </p>
                     
                         
-                            <span class="category-color">数据结构</span>
+                            <span class="category-color">高等数学</span>
                         
                     
                     
                         
-                            <span class="tag-color">数据结构基础</span>
+                            <span class="tag-color">高等数学</span>
                         
                     
                 </div>
@@ -78,35 +78,102 @@
         <div id="article">
             <div class="toc"></div>
             <div class="article-body">
-                <h3 id="数据结构的基本概念"><a href="#数据结构的基本概念" class="headerlink" title="数据结构的基本概念"></a>数据结构的基本概念</h3><h4 id="数据的概念"><a href="#数据的概念" class="headerlink" title="数据的概念"></a>数据的概念</h4><ul>
-<li><strong>数据：</strong></li>
-<li><strong>数据元素：</strong>数据的基本单</li>
-<li><strong>数据项：</strong>数据的最小单位</li>
-<li><strong>数据对象：</strong>是相同性质数据元素的集合</li>
+                <h2 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h2><p>函数 $f(x)$ 在某点 $x_0$ 的导数。</p>
+<ol>
+<li><p><strong>定义式：</strong> $\lim\limits_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}&#x3D;f’(x_0)$</p>
+</li>
+<li><p><strong>增量式：</strong>$$\lim\limits_{△x\rightarrow 0}\frac{f(x_0+△x)-f(x_0)}{△x}&#x3D;f’(x_0)$$，看其系数求解即可</p>
+<p>注：$△x$ 可换成其余字母，如：$h,t$，谁趋于 $0$ ，谁就是 $△x$ 。</p>
+</li>
+<li><p><strong>引申公式：</strong>$$\lim\limits_{△x\rightarrow 0}\frac{f(x_0+a△x)-f(x_0+b△x)}{c△x}&#x3D;\frac{a-b}{c}f’(x_0)$$</p>
+</li>
+</ol>
+<p>注：$f$ 不理，直接做差，谁消失就乘上谁的导数即可。</p>
+<h3 id="根据导数的几个定义的题型"><a href="#根据导数的几个定义的题型" class="headerlink" title="根据导数的几个定义的题型"></a>根据导数的几个定义的题型</h3><p><strong>题型一：</strong>用增量式和引申公式求解</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：已知 f(x)在x&#x3D;x_0可导，则\lim\limits_{h\rightarrow 0}\frac{f(x_0+h)-f(x_0)}{h}&#x3D;\<br>&amp; 引申公式\<br>&amp; 解：\lim\limits_{h\rightarrow 0}\frac{f(x_0+h)-f(x_0)}{h}，直接做差得\<br>&amp; &#x3D;\frac{h}{h}f’(x_0)\<br>&amp; &#x3D;1<br>\<br>\<br>&amp; 增量式\<br>&amp; 解：\lim\limits_{h\rightarrow 0}\frac{f(x_0+h)-f(x_0)}{h}，直接看系数得\<br>&amp; &#x3D;\frac{1-0}{1}f’(x_0)\<br>&amp; &#x3D;1<br>\end{aligned}<br>$$<br><strong>题型二：</strong>定义式求解</p>
+<p>特点：一般此时的 $f(x)$ 为复杂的多项式乘积形式</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设 f(x)&#x3D;x(x-1)(x-2)…(x-2010)，则f’(0)&#x3D;\<br>&amp; 解：\lim\limits_{h\rightarrow 0}\frac{f(x)-f(0)}{x-0}&#x3D;\lim\limits_{h\rightarrow 0}\frac{x(x-1)(x-2)…(x-2010)-0}{x-0}\<br>&amp; &#x3D;\lim\limits_{h\rightarrow 0}(x-1)(x-2)…(x-2010),把零带入进去得\<br>&amp; &#x3D;(-1)(-2)…(-2010)\<br>&amp;&#x3D;(-1)^{2010}•(1×2×…2010)\<br>&amp;&#x3D;2010!<br>\<br>\end{aligned}<br>$$<br><strong>题型三：</strong>已知 $f(x)$ 某点导数，求相关极限。</p>
+<p><strong>解法：</strong>根据导数的定义式，凑出相关极限。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设 f(x)在R上连续，且f(0)&#x3D;0,f’(0)&#x3D;2,求\lim\limits_{x\rightarrow 0}\frac{f(e^x-1)}{x}\<br>&amp; 解：根据已知条件由定义式子得，\lim\limits_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}&#x3D;\lim\limits_{x\rightarrow x_0}\frac{f(x)}{x}&#x3D;2\<br>&amp; 再对\lim\limits_{x\rightarrow 0}\frac{f(e^x-1)}{x}进行配凑得\<br>&amp;\lim\limits_{x\rightarrow 0}\frac{f(e^x-1)•e^x-1}{e^x-1•x},拆开得\lim\limits_{x\rightarrow 0}\frac{f(e^x-1)}{e^x-1}•\frac{e^x-1}{x}\<br>&amp;再由已知条件知道\frac{f(e^x-1)}{e^x-1}&#x3D;2，所以式子得\<br>&amp;\lim\limits_{x\rightarrow 0}2•\frac{e^x-1}{x}，x趋于0等价得\<br>&amp;\lim\limits_{x\rightarrow 0}2•\frac{x}{x}&#x3D;2\<br>\end{aligned}<br>$$<br><strong>题型四：</strong>已知函数极限求相关导数。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设 f(x)在x&#x3D;a处连续，且\lim\limits_{x\rightarrow a}\frac{f(x)}{x-a}&#x3D;2，求f’(a)及f(a)\<br>&amp; 解：\<br>&amp;注：极限存在，那么分母和分子式趋于0的，所以这是\frac{0}{0}型\<br>&amp; ∵\lim\limits_{x\rightarrow a}\frac{f(x)}{x-a}&#x3D;2\<br>&amp;∴因为分子趋于0得：\lim\limits_{x\rightarrow a}f(x)&#x3D;f(a)&#x3D;0\<br>&amp;用定义求导得：f’(a)&#x3D;\lim\limits_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}&#x3D;\lim\limits_{x\rightarrow a}\frac{f(x)-0}{x-a}\<br>&amp;&#x3D;\lim\limits_{x\rightarrow a}\frac{f(x)}{x-a}&#x3D;2\<br>&amp;\<br>\end{aligned}<br>$$</p>
+<h3 id="左导数与右导数"><a href="#左导数与右导数" class="headerlink" title="左导数与右导数"></a>左导数与右导数</h3><ol>
+<li><p>左右导数的定义：</p>
+<p>左导数：$f_-‘(x_0)&#x3D;\lim\limits_{x\rightarrow x_0^-}\frac{f(x)-f(x_0)}{x-x_0}$</p>
+<p>右导数：$f_+’(x_0)&#x3D;\lim\limits_{x\rightarrow x_0^+}\frac{f(x)-f(x_0)}{x-x_0}$</p>
+</li>
+<li><p>函数在某点 $x_0$ 的可导条件：$f_-‘(x_0)&#x3D;f’_+(x_0)$；左导&#x3D;右导。</p>
+</li>
+<li><p>可导的必要条件：可导函数比连续</p>
+</li>
+</ol>
+<p>注：可导 $\Rightarrow \begin{cases} 可导的函数必连续\Rightarrow 左极限&#x3D;右极限&#x3D;函数值\左导&#x3D;右导\end{cases}$</p>
+<h4 id="题型："><a href="#题型：" class="headerlink" title="题型："></a>题型：</h4><ul>
+<li><p>告知 $f(x)$ 可导，求参数：$a,b$</p>
+</li>
+<li><p>考可导 $\Rightarrow$ 连续 $\Rightarrow$ 极限</p>
+<p>注：不能反着来。</p>
+</li>
 </ul>
-<h4 id="数据的两种大结构"><a href="#数据的两种大结构" class="headerlink" title="数据的两种大结构"></a>数据的两种大结构</h4><ul>
-<li><p><strong>逻辑结构</strong></p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设 f(x)&#x3D;\begin{cases} e^x,x&gt;0\sinax+b,x&lt;&#x3D;0 \end{cases}在x&#x3D;0可导，求a，b\<br>&amp; 解：∵f(x)在x&#x3D;0可导,则f(x)在x&#x3D;0处连续\<br>&amp; 函数值为：x&#x3D;0，f(0)&#x3D;sinax+b,带入得：f(0)&#x3D;b\<br>&amp;\lim\limits_{x\rightarrow 0^-}f(x)&#x3D;\lim\limits_{x\rightarrow 0^-}(sinax+b)&#x3D;b\<br>&amp;\lim\limits_{x\rightarrow 0^+}f(x)&#x3D;\lim\limits_{x\rightarrow 0^+}e^x&#x3D;1\<br>&amp;根据极限存在原理，左极限&#x3D;右极限&#x3D;函数值得：b&#x3D;1\<br>&amp;又f’<em>-(0)&#x3D;f’</em>+(0)\<br>&amp;即f’<em>-(0)&#x3D;\lim\limits</em>{x\rightarrow x_0^-}\frac{f(x)-f(0)}{x-0}&#x3D;\lim\limits_{x\rightarrow x_0^-}\frac{sinax+1-1}{x}\<br>&amp;&#x3D;\frac{sinax}{x}，等价得：\frac{ax}{x}\<br>&amp;&#x3D;a\<br>&amp;即f’+-(0)&#x3D;\lim\limits_{x\rightarrow x_0^+}\frac{f(x)-f(0)}{x-0}&#x3D;\lim\limits_{x\rightarrow x_0^+}\frac{e^x-1}{x}\<br>&amp;&#x3D;等价得\frac{x}{x}\<br>&amp;&#x3D;1\<br>&amp;∴a&#x3D;1\<br>\end{aligned}<br>$$</p>
+<h3 id="函数不可导的情况"><a href="#函数不可导的情况" class="headerlink" title="函数不可导的情况"></a>函数不可导的情况</h3><ul>
+<li>可导 $\not&#x3D;$ 右导，即考点</li>
+<li>导数为 $\infty$，了解即可</li>
+</ul>
+<h3 id="各大函数的求导公式"><a href="#各大函数的求导公式" class="headerlink" title="各大函数的求导公式"></a>各大函数的求导公式</h3><ul>
+<li><p><strong>常数：</strong>C’&#x3D;0</p>
+</li>
+<li><p><strong>幂函数：</strong>$ (x^a)’&#x3D;ax^{a-1}$</p>
+</li>
+<li><p><strong>指数：</strong>$(a^x)’&#x3D;a^xlna$</p>
+<p>注：$(e^x)’&#x3D;e^x$</p>
+</li>
+<li><p><strong>对数：</strong>$(log^x_a)’&#x3D;\frac{1}{x}$</p>
+<p>注：$(lnx)’&#x3D;\frac{1}{x}$</p>
+</li>
+<li><p><strong>三角函数：</strong>$(sinx)’&#x3D;cosx$                 $(cosx)’&#x3D;-sinx$                  $(tanx)’&#x3D;sec^2x$</p>
+<p>​                   $(cotx)’&#x3D;-csc^2x$             $(secx)’&#x3D;secx•tanx$         $(cscx)’&#x3D;-cscx•cotx$</p>
+</li>
+<li><p><strong>反三角函数：</strong>$\begin{cases}(arcsinx)’&#x3D;\frac{1}{\sqrt{1-x^2}}\qquad\qquad (arccosx)’&#x3D;-\frac{1}{\sqrt{1-x^2}}\(arctanx)’&#x3D;\frac{1}{1-x^2}\qquad\qquad (arccotx)’&#x3D;-\frac{1}{1-x^2}\end{cases}$</p>
+</li>
+</ul>
+<h3 id="导数的四则运算及复合运算法则"><a href="#导数的四则运算及复合运算法则" class="headerlink" title="导数的四则运算及复合运算法则"></a>导数的四则运算及复合运算法则</h3><h4 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h4><p>设 $U，V$ 为函数</p>
+<ol>
+<li><p>$(U\pm V)’&#x3D;U’\pm V’$</p>
+</li>
+<li><p>$(k\pm U)’&#x3D;k•U’$</p>
+</li>
+<li><p>$\textcolor{red}{(U • V)’&#x3D;U’•V\pm U • V’}$</p>
+</li>
+<li><p>$\textcolor{red}{(\frac{U}{V})’&#x3D;\frac{U’•V-U•V’}{V^2}}$</p>
+<p>注：避免对分式的直接求导。</p>
+</li>
+</ol>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：求y&#x3D;2sinx+cosx•e^x-\sqrt{x}的导数\<br>&amp; 解：y’&#x3D;2cosx+(-sinx)•e^x+cosx•e^x-\frac{1}{2\sqrt{x}}\<br>\end{aligned}<br>$$</p>
+<h4 id="复合函数"><a href="#复合函数" class="headerlink" title="复合函数"></a>复合函数</h4><p>注：复合函数遇到对数可以化简为 $\begin{cases}ln\frac{b}{a}&#x3D;lnb-lna\lna•b&#x3D;lna+lnb\lna^b&#x3D;b•lna\\sqrt[b]{x^a}&#x3D;x^\frac{a}{b} \end{cases}$</p>
+<p><strong>原则：</strong>从外向里，层层求导，每层关系都是相乘的。</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：求y&#x3D;sinx^2的导数,求\left.\frac{d y}{d x}\right|<em>{ x&#x3D;0}\<br>&amp; 解：∵y’&#x3D;cosx^2•2x\<br>&amp;∴\left.\frac{d y}{d x}\right|</em>{ x&#x3D;0}&#x3D;cos0•2•0&#x3D;0<br>\end{aligned}<br>$$</p>
+<h5 id="复合函数求导类型"><a href="#复合函数求导类型" class="headerlink" title="复合函数求导类型"></a>复合函数求导类型</h5><h5 id="具体函数求导（不含-f-x-）"><a href="#具体函数求导（不含-f-x-）" class="headerlink" title="具体函数求导（不含 $f(x)$）"></a>具体函数求导（不含 $f(x)$）</h5><p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设y&#x3D;sinx^3,求y’\<br>&amp; 解：y’&#x3D;cosx^3•3x^2&#x3D;3x^2•cosx^3<br>\end{aligned}<br>$$</p>
+<h5 id="抽象复合函数求导，-f-g-x"><a href="#抽象复合函数求导，-f-g-x" class="headerlink" title="抽象复合函数求导，$f[g(x)]$"></a>抽象复合函数求导，$f[g(x)]$</h5><p>注：$f$ 也要求导，求导公式为：$f(x)&#x3D;f’(x)$</p>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设y&#x3D;f(sinx),且f(u)可导，求y’\<br>&amp; 解：y’&#x3D;f’(sinx)•cosx<br>\end{aligned}<br>$$</p>
+<h3 id="分段函数求导"><a href="#分段函数求导" class="headerlink" title="分段函数求导"></a>分段函数求导</h3><p><strong>求导原则：</strong></p>
+<ol>
+<li>分段点两侧基本函数直接求导</li>
+<li>中间的分段点处，用导数定义求导</li>
+</ol>
+<h3 id="隐函数求导"><a href="#隐函数求导" class="headerlink" title="隐函数求导"></a>隐函数求导</h3><p><strong>定义：</strong>不是 $y&#x3D;f(x)$ 形式的函数，如：$y&#x3D;e^{xy}$。</p>
+<p><strong>解法：</strong></p>
 <ul>
-<li><p><strong>集合结构：</strong>除了属于同一集合内之外，并无其它关系。</p>
-</li>
-<li><p><strong>线性结构：</strong>一对一关系。</p>
-</li>
-<li><p><strong>树结构：</strong>一对多关系。</p>
-</li>
-<li><p><strong>图结构：</strong>多对多关系。</p>
-<p>其中集合结构、树结构和图结构是非线性结构。线性结构包括线性表、栈与队列、字符串、数组和广义表。具体结构如图所示</p>
-<p><img src="https://gitee.com/turbid-sake/blog-image/raw/master/dataStructureImage/%E6%95%B0%E6%8D%AE%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84%E5%9B%BE-2024-1-22"></p>
-</li>
-</ul>
-</li>
-<li><p><strong>存储结构</strong></p>
-<ul>
-<li><strong>顺序存储结构(数组)：</strong>需要依次存储在一片连续的存储空间内，借助元素在存储器中的相对位置来表示数据元素之间的关系。</li>
-<li>**链式存储结构(指针)**：不用占据一整片存储空间，但是需要给每个节点附加指针字段，用于存放后继的存储地址，以此表示节点之间的关系。</li>
-</ul>
+<li><p>公式法</p>
+<p><strong>步骤：</strong></p>
+<ol>
+<li>对题干函数移项：(用方程左边 $-$ 右边)，得 $F(x、y)&#x3D;0$</li>
+<li>求偏导，$F_x$ ：对 $x$ 求导，$y$ 看作一个常数，再对$F_y$ ：对 $y$ 求导，$x$ 看作一个常数</li>
+<li>套公式：$\frac{d y}{d x} &#x3D;\frac{-F_x}{F_y}$</li>
+</ol>
+<p><strong>例子：</strong><br>$$<br>\begin{aligned}<br>&amp; eg：设函数y&#x3D;y(x),由y^2-2xy+9&#x3D;0确定，求y’\<br>&amp; 解：令F(x、y) &#x3D;y^2-2xy+9\<br>&amp;F_x&#x3D;-2y，F_y&#x3D;2y-2x\<br>&amp;故y’\frac{d y}{d x}&#x3D;\frac{-F_x}{F_y}&#x3D;\frac{2y}{2y-2x}&#x3D;\frac{y}{y-x}\<br>&amp;\<br>\end{aligned}<br>$$</p>
 </li>
 </ul>
-<h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><h3 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h3><h3 id="字符串、数组和广义表"><a href="#字符串、数组和广义表" class="headerlink" title="字符串、数组和广义表"></a>字符串、数组和广义表</h3><h3 id="树和二叉树"><a href="#树和二叉树" class="headerlink" title="树和二叉树"></a>树和二叉树</h3><h3 id="图"><a href="#图" class="headerlink" title="图"></a>图</h3><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h3 id="算法的一般概念"><a href="#算法的一般概念" class="headerlink" title="算法的一般概念"></a>算法的一般概念</h3><h3 id="算法的简介"><a href="#算法的简介" class="headerlink" title="算法的简介"></a>算法的简介</h3>
+
                 
                 <p class="end">__END__</p>
             </div>
@@ -118,7 +185,7 @@
     <div class="suffix-box-right">
         <span class="suffix-box-title">文章作者：</span>轻风
         <br>
-        <span class="suffix-box-title">文章出处：</span><a href="/2024/01/21/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" target="_blank">数据结构</a>
+        <span class="suffix-box-title">文章出处：</span><a href="/2024/08/04/%E5%AF%BC%E6%95%B0/" target="_blank">导数</a>
         <br>
         <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
         <br>
@@ -133,7 +200,7 @@
                     <div class="category">
                         分类：
                         
-                            <a href="/category/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+                            <a href="/category/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
                         
                     </div>
                 
@@ -141,17 +208,17 @@
                     <div class="tag">
                         标签：
                         
-                            <a href="/tag/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/">数据结构基础</a>
+                            <a href="/tag/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
                         
                     </div>
                 
                 <div class="article-prev-next">
                     
-                        <a href="/2024/08/04/%E5%AF%BC%E6%95%B0/" class="prev-prefix">« </a> 上一篇：    <a href="/2024/08/04/%E5%AF%BC%E6%95%B0/" title="发布于 2024-08-04 08:39">导数</a>
+                        <a href="/2024/08/04/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/" class="prev-prefix">« </a> 上一篇：    <a href="/2024/08/04/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/" title="发布于 2024-08-04 08:39">函数与极限连续</a>
                         <br>
                     
                     
-                        <a href="/2023/10/29/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" class="next-prefix">» </a> 下一篇：    <a href="/2023/10/29/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="发布于 2023-10-29 11:57">C语言基础</a>
+                        <a href="/2024/01/21/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="next-prefix">» </a> 下一篇：    <a href="/2024/01/21/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="发布于 2024-01-21 11:34">数据结构</a>
                     
                 </div>
             </div>
