@@ -29,7 +29,11 @@
     <link type="text/css" rel="stylesheet" href="/css/code.css">
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
     <link type="text/css" rel="stylesheet" href="/css/post.css">
@@ -80,24 +84,24 @@
         <div id="article">
             <div class="toc"></div>
             <div class="article-body">
-                <h2 id="C语言基础">C语言基础</h2>
+                <h2 id="c语言基础"><a class="markdownIt-Anchor" href="#c语言基础"></a> C语言基础</h2>
 <p>注：双撇号是字符串，单撇号是字符常量</p>
-<h3 id="前言">前言</h3>
+<h3 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h3>
 <p><strong>C程序主要是由函数构成的</strong>，一个C源程序必须包含一个main函数，或main函数和若干个其它函数，<strong>因此，函数是C程序的基本单位</strong>。</p>
 <p><strong>一个C程序总是从main函数开始执行的</strong>，无论main函数在程序的什么位置都一样。</p>
 <p><strong>C语言本身是没有输入输出语句</strong>，输入输出是由库函数 scanf 和 printf 等函数来完成的。</p>
-<h2 id="基础">基础</h2>
-<h3 id="C程序的运行步骤">C程序的运行步骤</h3>
+<h2 id="基础"><a class="markdownIt-Anchor" href="#基础"></a> 基础</h2>
+<h3 id="c程序的运行步骤"><a class="markdownIt-Anchor" href="#c程序的运行步骤"></a> C程序的运行步骤</h3>
 <p>程序，就是一组计算机能识别和执行的指令，用高级语言编写的程序为“<strong>源程序</strong>”，但计算机只能识别并执行0和1组成的二进制的指令，所以需要“<strong>编译程序</strong>”的软件，将高级程序编译成二进制形式的“<strong>目标程序</strong>&quot;，然后再将目标程序与系统函数库以及其它目标程序连接起来，形成”<strong>可执行程序</strong>“。</p>
-<h3 id="强制类型转换">强制类型转换</h3>
+<h3 id="强制类型转换"><a class="markdownIt-Anchor" href="#强制类型转换"></a> 强制类型转换</h3>
 <p><strong>格式</strong>：(类型名)(表达式)</p>
 <p><strong>例如</strong>：(double)a   (float)(x/y)   (int)(x+y)</p>
 <p>注：如果只写成 (int)x + y，就会先将 x 强制转换为 int 整型，然后再进行运算。</p>
-<h3 id="补码的算法">补码的算法</h3>
+<h3 id="补码的算法"><a class="markdownIt-Anchor" href="#补码的算法"></a> 补码的算法</h3>
 <p>取该数（不考虑符号）的二进制形式，这就是该数的<strong>原码</strong>。</p>
 <p>使用原码取反，就是该数的<strong>反码</strong>。</p>
 <p>使用反码加 1，就是该数的<strong>补码</strong>。</p>
-<h3 id="数据的输入输出">数据的输入输出</h3>
+<h3 id="数据的输入输出"><a class="markdownIt-Anchor" href="#数据的输入输出"></a> 数据的输入输出</h3>
 <table>
 <thead>
 <tr>
@@ -110,7 +114,7 @@
 <tr>
 <td style="text-align:center">putchar()</td>
 <td style="text-align:center">向显示器输出一个字符</td>
-<td style="text-align:center">char a = ‘B‘; putchar(a);</td>
+<td style="text-align:center">char a = 'B'; putchar(a);</td>
 </tr>
 <tr>
 <td style="text-align:center">getchar()</td>
@@ -120,17 +124,17 @@
 <tr>
 <td style="text-align:center">scanf()</td>
 <td style="text-align:center">输入数据</td>
-<td style="text-align:center">char a, int b; scanf(“%c,%d“, &amp;a, &amp;b)</td>
+<td style="text-align:center">char a, int b; scanf(&quot;%c,%d&quot;, &amp;a, &amp;b)</td>
 </tr>
 <tr>
 <td style="text-align:center">printf()</td>
 <td style="text-align:center">输出数据</td>
-<td style="text-align:center">char a = ‘A‘, int b = 100; printf(“a=%c,b=%d“, a, b)</td>
+<td style="text-align:center">char a = 'A', int b = 100; printf(&quot;a=%c,b=%d&quot;, a, b)</td>
 </tr>
 </tbody>
 </table>
 <p>注：sancf()函数中的例子，&amp; 是地址运输符，&amp;a 是指变量 a 在内存中的地址，输入的数据会一次进入这些变量的存储单元中</p>
-<h3 id="格式字符串">格式字符串</h3>
+<h3 id="格式字符串"><a class="markdownIt-Anchor" href="#格式字符串"></a> 格式字符串</h3>
 <table>
 <thead>
 <tr>
@@ -177,8 +181,8 @@
 </tr>
 </tbody>
 </table>
-<p>注：使用 %f 输出 double 类型的时候，需要在 f 前面添加一个大写字母 L 或小写 l 修饰符，如：double a = 12.122; printf(“%lf“, a);</p>
-<h3 id="格式字符串的输入输出修饰符">格式字符串的输入输出修饰符</h3>
+<p>注：使用 %f 输出 double 类型的时候，需要在 f 前面添加一个大写字母 L 或小写 l 修饰符，如：double a = 12.122; printf(&quot;%lf&quot;, a);</p>
+<h3 id="格式字符串的输入输出修饰符"><a class="markdownIt-Anchor" href="#格式字符串的输入输出修饰符"></a> 格式字符串的输入输出修饰符</h3>
 <table>
 <thead>
 <tr>
@@ -205,7 +209,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="数学函数">数学函数</h3>
+<h3 id="数学函数"><a class="markdownIt-Anchor" href="#数学函数"></a> 数学函数</h3>
 <p>注：使用数学函数的时候要在 #include &lt;stdio.h&gt; 的下面添加 #include &lt;math.h&gt;</p>
 <table>
 <thead>
@@ -221,10 +225,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="数组">数组</h3>
+<h3 id="数组"><a class="markdownIt-Anchor" href="#数组"></a> 数组</h3>
 <p>**数组格式：**数组类型 数组名 [数组长度] = {数组初始值}</p>
 <p>**例子：**int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}</p>
-<h4 id="字符串处理函数">字符串处理函数</h4>
+<h4 id="字符串处理函数"><a class="markdownIt-Anchor" href="#字符串处理函数"></a> 字符串处理函数</h4>
 <p>注：使用字符串函数时，需要在文件头部添加 #include &lt;string.h&gt;</p>
 <table>
 <thead>
@@ -268,8 +272,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="函数">函数</h3>
-<h4 id="存储类别">存储类别</h4>
+<h3 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h3>
+<h4 id="存储类别"><a class="markdownIt-Anchor" href="#存储类别"></a> 存储类别</h4>
 <p><strong>定义：<strong>C语言中有两种存储类别，分别为</strong>静态存储方式</strong>和<strong>动态存储方式</strong>，静态存储方式会在程序运行期间系统在静态存储区划分存储空间，而在程序运行期间静态存储的数据不会被释放，动态存储方式则是在函数的调用期间在动态存储区划分存储空间，当函数运行结束动态存储方式的数据会被释放</p>
 <p><strong>指定变量存储类别</strong></p>
 <ol>
@@ -287,7 +291,7 @@
 <p><strong>注：<strong>在函数中使用这个修饰符，会将数据转换成</strong>静态局部变量</strong>，也就是说当函数运行结束之后，并不会将改变量释放，会保留上一次运行的值</p>
 </li>
 </ol>
-<h4 id="内部函数和外部函数">内部函数和外部函数</h4>
+<h4 id="内部函数和外部函数"><a class="markdownIt-Anchor" href="#内部函数和外部函数"></a> 内部函数和外部函数</h4>
 <ol>
 <li>
 <p>内部函数</p>
