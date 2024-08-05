@@ -29,11 +29,7 @@
     <link type="text/css" rel="stylesheet" href="/css/code.css">
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
     <link type="text/css" rel="stylesheet" href="/css/post.css">
@@ -90,193 +86,173 @@
 <p><strong>C语言本身是没有输入输出语句</strong>，输入输出是由库函数 scanf 和 printf 等函数来完成的。</p>
 <h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="C程序的运行步骤"><a href="#C程序的运行步骤" class="headerlink" title="C程序的运行步骤"></a>C程序的运行步骤</h3><p>程序，就是一组计算机能识别和执行的指令，用高级语言编写的程序为“<strong>源程序</strong>”，但计算机只能识别并执行0和1组成的二进制的指令，所以需要“<strong>编译程序</strong>”的软件，将高级程序编译成二进制形式的“<strong>目标程序</strong>“，然后再将目标程序与系统函数库以及其它目标程序连接起来，形成”<strong>可执行程序</strong>“。</p>
 <h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p><strong>格式</strong>：(类型名)(表达式)</p>
-<p><strong>例如</strong>：(double)a   (float)(x/y)   (int)(x+y)</p>
+<p><strong>例如</strong>：(double)a   (float)(x&#x2F;y)   (int)(x+y)</p>
 <p>注：如果只写成 (int)x + y，就会先将 x 强制转换为 int 整型，然后再进行运算。</p>
 <h3 id="补码的算法"><a href="#补码的算法" class="headerlink" title="补码的算法"></a>补码的算法</h3><p>取该数（不考虑符号）的二进制形式，这就是该数的<strong>原码</strong>。</p>
 <p>使用原码取反，就是该数的<strong>反码</strong>。</p>
 <p>使用反码加 1，就是该数的<strong>补码</strong>。</p>
-<h3 id="数据的输入输出"><a href="#数据的输入输出" class="headerlink" title="数据的输入输出"></a>数据的输入输出</h3><div class="table-container">
-<table>
+<h3 id="数据的输入输出"><a href="#数据的输入输出" class="headerlink" title="数据的输入输出"></a>数据的输入输出</h3><table>
 <thead>
 <tr>
-<th style="text-align:center">函数名</th>
-<th style="text-align:center">作用</th>
-<th style="text-align:center">例子</th>
+<th align="center">函数名</th>
+<th align="center">作用</th>
+<th align="center">例子</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">putchar()</td>
-<td style="text-align:center">向显示器输出一个字符</td>
-<td style="text-align:center">char a = ‘B’; putchar(a);</td>
+<tbody><tr>
+<td align="center">putchar()</td>
+<td align="center">向显示器输出一个字符</td>
+<td align="center">char a &#x3D; ‘B’; putchar(a);</td>
 </tr>
 <tr>
-<td style="text-align:center">getchar()</td>
-<td style="text-align:center">输入一个字符</td>
-<td style="text-align:center">char a; a = getchar();</td>
+<td align="center">getchar()</td>
+<td align="center">输入一个字符</td>
+<td align="center">char a; a &#x3D; getchar();</td>
 </tr>
 <tr>
-<td style="text-align:center">scanf()</td>
-<td style="text-align:center">输入数据</td>
-<td style="text-align:center">char a, int b; scanf(“%c,%d”, &amp;a, &amp;b)</td>
+<td align="center">scanf()</td>
+<td align="center">输入数据</td>
+<td align="center">char a, int b; scanf(“%c,%d”, &amp;a, &amp;b)</td>
 </tr>
 <tr>
-<td style="text-align:center">printf()</td>
-<td style="text-align:center">输出数据</td>
-<td style="text-align:center">char a = ‘A’, int b = 100; printf(“a=%c,b=%d”, a, b)</td>
+<td align="center">printf()</td>
+<td align="center">输出数据</td>
+<td align="center">char a &#x3D; ‘A’, int b &#x3D; 100; printf(“a&#x3D;%c,b&#x3D;%d”, a, b)</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <p>注：sancf()函数中的例子，&amp; 是地址运输符，&amp;a 是指变量 a 在内存中的地址，输入的数据会一次进入这些变量的存储单元中</p>
-<h3 id="格式字符串"><a href="#格式字符串" class="headerlink" title="格式字符串"></a>格式字符串</h3><div class="table-container">
+<h3 id="格式字符串"><a href="#格式字符串" class="headerlink" title="格式字符串"></a>格式字符串</h3><table>
+<thead>
+<tr>
+<th align="center">格式化字符串</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">%d,i</td>
+<td align="center">输入输出时用十进制整数表示(显示)</td>
+</tr>
+<tr>
+<td align="center">%c</td>
+<td align="center">字符输入输出时所用的格式字符串</td>
+</tr>
+<tr>
+<td align="center">%s</td>
+<td align="center">用来输入输出一个字符串</td>
+</tr>
+<tr>
+<td align="center">%f</td>
+<td align="center">用来输入输出一个实数</td>
+</tr>
+<tr>
+<td align="center">%u</td>
+<td align="center">用来输入输出无符号十进制整数</td>
+</tr>
+<tr>
+<td align="center">%o</td>
+<td align="center">以八进制的形式输入输出</td>
+</tr>
+<tr>
+<td align="center">%x</td>
+<td align="center">以十六进制的形式输入输出</td>
+</tr>
+<tr>
+<td align="center">%e</td>
+<td align="center">用来输出数字的科学计数法</td>
+</tr>
+<tr>
+<td align="center">%g</td>
+<td align="center">根据变量的长度自动选择 %f 或 %e 的格式输出</td>
+</tr>
+</tbody></table>
+<p>注：使用 %f 输出 double 类型的时候，需要在 f 前面添加一个大写字母 L 或小写 l 修饰符，如：double a &#x3D; 12.122; printf(“%lf”, a);</p>
+<h3 id="格式字符串的输入输出修饰符"><a href="#格式字符串的输入输出修饰符" class="headerlink" title="格式字符串的输入输出修饰符"></a>格式字符串的输入输出修饰符</h3><table>
+<thead>
+<tr>
+<th align="center">修饰符</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">域宽</td>
+<td align="center">用于指定输入输出数据所占的宽度</td>
+</tr>
+<tr>
+<td align="center">l</td>
+<td align="center">用于输入输出长整型的数据</td>
+</tr>
+<tr>
+<td align="center">h</td>
+<td align="center">用于输入输出短整型的数据</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">表示输入项在读入后不赋值给相应的变量</td>
+</tr>
+</tbody></table>
+<h3 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h3><p>注：使用数学函数的时候要在 #include &lt;stdio.h&gt; 的下面添加 #include &lt;math.h&gt;</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">格式化字符串</th>
-<th style="text-align:center">作用</th>
+<th align="center">函数名</th>
+<th align="center">作用</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">%d,i</td>
-<td style="text-align:center">输入输出时用十进制整数表示(显示)</td>
+<tbody><tr>
+<td align="center">sqrt()</td>
+<td align="center">求平方根</td>
 </tr>
-<tr>
-<td style="text-align:center">%c</td>
-<td style="text-align:center">字符输入输出时所用的格式字符串</td>
-</tr>
-<tr>
-<td style="text-align:center">%s</td>
-<td style="text-align:center">用来输入输出一个字符串</td>
-</tr>
-<tr>
-<td style="text-align:center">%f</td>
-<td style="text-align:center">用来输入输出一个实数</td>
-</tr>
-<tr>
-<td style="text-align:center">%u</td>
-<td style="text-align:center">用来输入输出无符号十进制整数</td>
-</tr>
-<tr>
-<td style="text-align:center">%o</td>
-<td style="text-align:center">以八进制的形式输入输出</td>
-</tr>
-<tr>
-<td style="text-align:center">%x</td>
-<td style="text-align:center">以十六进制的形式输入输出</td>
-</tr>
-<tr>
-<td style="text-align:center">%e</td>
-<td style="text-align:center">用来输出数字的科学计数法</td>
-</tr>
-<tr>
-<td style="text-align:center">%g</td>
-<td style="text-align:center">根据变量的长度自动选择 %f 或 %e 的格式输出</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>注：使用 %f 输出 double 类型的时候，需要在 f 前面添加一个大写字母 L 或小写 l 修饰符，如：double a = 12.122; printf(“%lf”, a);</p>
-<h3 id="格式字符串的输入输出修饰符"><a href="#格式字符串的输入输出修饰符" class="headerlink" title="格式字符串的输入输出修饰符"></a>格式字符串的输入输出修饰符</h3><div class="table-container">
+</tbody></table>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p><strong>数组格式：</strong>数组类型 数组名 [数组长度] &#x3D; {数组初始值}</p>
+<p><strong>例子：</strong>int arr[10] &#x3D; {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}</p>
+<h4 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h4><p>注：使用字符串函数时，需要在文件头部添加 #include &lt;string.h&gt;</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">修饰符</th>
-<th style="text-align:center">作用</th>
+<th align="center">函数名</th>
+<th align="center">作用</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">域宽</td>
-<td style="text-align:center">用于指定输入输出数据所占的宽度</td>
+<tbody><tr>
+<td align="center">gets(字符数组)</td>
+<td align="center">从终端输入一个字符串到数组里</td>
 </tr>
 <tr>
-<td style="text-align:center">l</td>
-<td style="text-align:center">用于输入输出长整型的数据</td>
+<td align="center">puts(字符数组)</td>
+<td align="center">将一个字符串输出到终端</td>
 </tr>
 <tr>
-<td style="text-align:center">h</td>
-<td style="text-align:center">用于输入输出短整型的数据</td>
+<td align="center">strcat(字符数组1, 字符数组2)</td>
+<td align="center">合并两个字符数组，将字符数组2连接到字符数组1后面</td>
 </tr>
 <tr>
-<td style="text-align:center">*</td>
-<td style="text-align:center">表示输入项在读入后不赋值给相应的变量</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h3><p>注：使用数学函数的时候要在 #include <stdio.h> 的下面添加 #include <math.h></p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">函数名</th>
-<th style="text-align:center">作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">sqrt()</td>
-<td style="text-align:center">求平方根</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p><strong>数组格式：</strong>数组类型 数组名 [数组长度] = {数组初始值}</p>
-<p><strong>例子：</strong>int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}</p>
-<h4 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h4><p>注：使用字符串函数时，需要在文件头部添加 #include <string.h></p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">函数名</th>
-<th style="text-align:center">作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">gets(字符数组)</td>
-<td style="text-align:center">从终端输入一个字符串到数组里</td>
+<td align="center">strcpy(字符数组1, 字符串2)</td>
+<td align="center">将字符串2直接覆盖字符数组1的数据</td>
 </tr>
 <tr>
-<td style="text-align:center">puts(字符数组)</td>
-<td style="text-align:center">将一个字符串输出到终端</td>
+<td align="center">strcmp(字符串1, 字符串2)</td>
+<td align="center">比较两个字符串，两个字符串相等返回 ”0“，1 大于 2 返回 ”1“，1 小于 2 返回 ”-1“</td>
 </tr>
 <tr>
-<td style="text-align:center">strcat(字符数组1, 字符数组2)</td>
-<td style="text-align:center">合并两个字符数组，将字符数组2连接到字符数组1后面</td>
+<td align="center">strlen(字符数组)</td>
+<td align="center">返回字符数组的长度</td>
 </tr>
 <tr>
-<td style="text-align:center">strcpy(字符数组1, 字符串2)</td>
-<td style="text-align:center">将字符串2直接覆盖字符数组1的数据</td>
+<td align="center">strlwr(字符串)</td>
+<td align="center">将字符串大写字母转换成小写字母</td>
 </tr>
 <tr>
-<td style="text-align:center">strcmp(字符串1, 字符串2)</td>
-<td style="text-align:center">比较两个字符串，两个字符串相等返回 ”0“，1 大于 2 返回 ”1“，1 小于 2 返回 ”-1“</td>
+<td align="center">strupr(字符串)</td>
+<td align="center">将字符串小写字母转换成大写字母</td>
 </tr>
-<tr>
-<td style="text-align:center">strlen(字符数组)</td>
-<td style="text-align:center">返回字符数组的长度</td>
-</tr>
-<tr>
-<td style="text-align:center">strlwr(字符串)</td>
-<td style="text-align:center">将字符串大写字母转换成小写字母</td>
-</tr>
-<tr>
-<td style="text-align:center">strupr(字符串)</td>
-<td style="text-align:center">将字符串小写字母转换成大写字母</td>
-</tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="存储类别"><a href="#存储类别" class="headerlink" title="存储类别"></a>存储类别</h4><p><strong>定义：</strong>C语言中有两种存储类别，分别为<strong>静态存储方式</strong>和<strong>动态存储方式</strong>，静态存储方式会在程序运行期间系统在静态存储区划分存储空间，而在程序运行期间静态存储的数据不会被释放，动态存储方式则是在函数的调用期间在动态存储区划分存储空间，当函数运行结束动态存储方式的数据会被释放</p>
 <p><strong>指定变量存储类别</strong> </p>
 <ol>
-<li><p>自动变量<strong>(</strong>动态变量)</p>
+<li><p>自动变量**(**动态变量)</p>
 <p><strong>修饰符：</strong>auto</p>
 <p><strong>作用：</strong>将变量使用动态存储方式存储</p>
-<p><strong>例子：</strong>auto int a, b = 3;</p>
+<p><strong>例子：</strong>auto int a, b &#x3D; 3;</p>
 </li>
 <li><p>静态变量</p>
 <p><strong>修饰符：</strong>static</p>
